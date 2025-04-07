@@ -1,0 +1,706 @@
+<!DOCTYPE html><html  lang="en"><head><title data-rh="true"></title><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="expo-reset">#root,body,html{height:100%}body{overflow:hidden}#root{display:flex}</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="1"]{}
+.css-11aywtz{-moz-appearance:textfield;-webkit-appearance:none;background-color:rgba(0,0,0,0.00);border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px;border:0 solid black;box-sizing:border-box;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0px;padding:0px;resize:none;}
+.css-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;}
+.css-175oi2r{align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;}
+.css-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:inherit;display:inline;font:inherit;list-style:none;margin:0px;padding:0px;position:relative;text-align:inherit;text-decoration:none;white-space:inherit;word-wrap:break-word;}
+.css-9pa8cd{bottom:0px;height:100%;left:0px;opacity:0;position:absolute;right:0px;top:0px;width:100%;z-index:-1;}
+[stylesheet-group="2"]{}
+.r-1064s9p{margin:4px;}
+.r-11mg6pl{border-bottom-color:rgba(255,255,255,1.00);border-left-color:rgba(255,255,255,1.00);border-right-color:rgba(255,255,255,1.00);border-top-color:rgba(255,255,255,1.00);}
+.r-11u4nky{border-bottom-color:rgba(221,221,221,1.00);border-left-color:rgba(221,221,221,1.00);border-right-color:rgba(221,221,221,1.00);border-top-color:rgba(221,221,221,1.00);}
+.r-13awgt0{flex:1;}
+.r-147vkhu{border-bottom-color:rgba(46,204,113,1.00);border-left-color:rgba(46,204,113,1.00);border-right-color:rgba(46,204,113,1.00);border-top-color:rgba(46,204,113,1.00);}
+.r-14f9gny{border-bottom-width:4px;border-left-width:4px;border-right-width:4px;border-top-width:4px;}
+.r-17oqthx{border-bottom-color:rgba(231,76,60,1.00);border-left-color:rgba(231,76,60,1.00);border-right-color:rgba(231,76,60,1.00);border-top-color:rgba(231,76,60,1.00);}
+.r-181qdit{border-bottom-color:rgba(100,181,246,1.00);border-left-color:rgba(100,181,246,1.00);border-right-color:rgba(100,181,246,1.00);border-top-color:rgba(100,181,246,1.00);}
+.r-183ao7s{border-bottom-color:rgba(255,255,255,0.50);border-left-color:rgba(255,255,255,0.50);border-right-color:rgba(255,255,255,0.50);border-top-color:rgba(255,255,255,0.50);}
+.r-18z6wq0{border-bottom-color:rgba(58,88,117,1.00);border-left-color:rgba(58,88,117,1.00);border-right-color:rgba(58,88,117,1.00);border-top-color:rgba(58,88,117,1.00);}
+.r-1awa8pu{border-bottom-color:rgba(101,119,134,1.00);border-left-color:rgba(101,119,134,1.00);border-right-color:rgba(101,119,134,1.00);border-top-color:rgba(101,119,134,1.00);}
+.r-1ayp8ji{border-bottom-color:rgba(51,51,51,1.00);border-left-color:rgba(51,51,51,1.00);border-right-color:rgba(51,51,51,1.00);border-top-color:rgba(51,51,51,1.00);}
+.r-1bq2mok{margin:3px;}
+.r-1c549yc{border-bottom-color:rgba(68,68,68,1.00);border-left-color:rgba(68,68,68,1.00);border-right-color:rgba(68,68,68,1.00);border-top-color:rgba(68,68,68,1.00);}
+.r-1d4xg89{border-bottom-color:rgba(170,184,194,1.00);border-left-color:rgba(170,184,194,1.00);border-right-color:rgba(170,184,194,1.00);border-top-color:rgba(170,184,194,1.00);}
+.r-1d6rzhh{border-bottom-width:3px;border-left-width:3px;border-right-width:3px;border-top-width:3px;}
+.r-1dumxj3{margin:2px;}
+.r-1dzdj1l{border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;}
+.r-1eqp70n{border-bottom-color:rgba(148,0,211,1.00);border-left-color:rgba(148,0,211,1.00);border-right-color:rgba(148,0,211,1.00);border-top-color:rgba(148,0,211,1.00);}
+.r-1f0042m{border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-left-radius:5px;border-top-right-radius:5px;}
+.r-1fowp7b{border-bottom-color:rgba(212,175,55,1.00);border-left-color:rgba(212,175,55,1.00);border-right-color:rgba(212,175,55,1.00);border-top-color:rgba(212,175,55,1.00);}
+.r-1fyj716{border-bottom-left-radius:7.5px;border-bottom-right-radius:7.5px;border-top-left-radius:7.5px;border-top-right-radius:7.5px;}
+.r-1h84pjw{border-bottom-left-radius:25px;border-bottom-right-radius:25px;border-top-left-radius:25px;border-top-right-radius:25px;}
+.r-1icu4ot{border-bottom-color:rgba(255,215,0,1.00);border-left-color:rgba(255,215,0,1.00);border-right-color:rgba(255,215,0,1.00);border-top-color:rgba(255,215,0,1.00);}
+.r-1j16mh1{border-bottom-left-radius:100%;border-bottom-right-radius:100%;border-top-left-radius:100%;border-top-right-radius:100%;}
+.r-1jkafct{border-bottom-left-radius:2px;border-bottom-right-radius:2px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.r-1jyn79y{border-bottom-color:rgba(0,150,136,1.00);border-left-color:rgba(0,150,136,1.00);border-right-color:rgba(0,150,136,1.00);border-top-color:rgba(0,150,136,1.00);}
+.r-1k7b5sc{border-bottom-color:rgba(121,134,203,1.00);border-left-color:rgba(121,134,203,1.00);border-right-color:rgba(121,134,203,1.00);border-top-color:rgba(121,134,203,1.00);}
+.r-1llaxt6{border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;}
+.r-1mxhqmb{border-bottom-left-radius:11px;border-bottom-right-radius:11px;border-top-left-radius:11px;border-top-right-radius:11px;}
+.r-1nrcaag{border-bottom-color:rgba(0,191,255,1.00);border-left-color:rgba(0,191,255,1.00);border-right-color:rgba(0,191,255,1.00);border-top-color:rgba(0,191,255,1.00);}
+.r-1oqcu8e{padding:15px;}
+.r-1pcd2l5{padding:20px;}
+.r-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-1q9bdsx{border-bottom-left-radius:12px;border-bottom-right-radius:12px;border-top-left-radius:12px;border-top-right-radius:12px;}
+.r-1rvyss1{border-bottom-color:rgba(255,255,255,0.20);border-left-color:rgba(255,255,255,0.20);border-right-color:rgba(255,255,255,0.20);border-top-color:rgba(255,255,255,0.20);}
+.r-1sp51qo{padding:10px;}
+.r-1t88yyp{border-bottom-color:rgba(155,89,182,1.00);border-left-color:rgba(155,89,182,1.00);border-right-color:rgba(155,89,182,1.00);border-top-color:rgba(155,89,182,1.00);}
+.r-1tw7wh{border-bottom-left-radius:50px;border-bottom-right-radius:50px;border-top-left-radius:50px;border-top-right-radius:50px;}
+.r-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+.r-1ulf27d{border-bottom-color:rgba(255,255,255,0.15);border-left-color:rgba(255,255,255,0.15);border-right-color:rgba(255,255,255,0.15);border-top-color:rgba(255,255,255,0.15);}
+.r-1uu6nss{padding:5px;}
+.r-1wie5xm{border-bottom-color:rgba(255,204,0,1.00);border-left-color:rgba(255,204,0,1.00);border-right-color:rgba(255,204,0,1.00);border-top-color:rgba(255,204,0,1.00);}
+.r-1wioyrx{border-bottom-color:rgba(255,255,255,0.10);border-left-color:rgba(255,255,255,0.10);border-right-color:rgba(255,255,255,0.10);border-top-color:rgba(255,255,255,0.10);}
+.r-1wm1n56{border-bottom-color:rgba(26,35,126,1.00);border-left-color:rgba(26,35,126,1.00);border-right-color:rgba(26,35,126,1.00);border-top-color:rgba(26,35,126,1.00);}
+.r-1xc7w19{border-bottom-color:rgba(0,0,0,1.00);border-left-color:rgba(0,0,0,1.00);border-right-color:rgba(0,0,0,1.00);border-top-color:rgba(0,0,0,1.00);}
+.r-1xfd6ze{border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.r-1yd45rl{border-bottom-color:rgba(102,102,102,1.00);border-left-color:rgba(102,102,102,1.00);border-right-color:rgba(102,102,102,1.00);border-top-color:rgba(102,102,102,1.00);}
+.r-1ylenci{border-bottom-left-radius:15px;border-bottom-right-radius:15px;border-top-left-radius:15px;border-top-right-radius:15px;}
+.r-27b7xz{border-bottom-color:rgba(138,43,226,1.00);border-left-color:rgba(138,43,226,1.00);border-right-color:rgba(138,43,226,1.00);border-top-color:rgba(138,43,226,1.00);}
+.r-2j1mxk{border-bottom-left-radius:55px;border-bottom-right-radius:55px;border-top-left-radius:55px;border-top-right-radius:55px;}
+.r-2y1dqn{border-bottom-color:rgba(212,175,55,0.30);border-left-color:rgba(212,175,55,0.30);border-right-color:rgba(212,175,55,0.30);border-top-color:rgba(212,175,55,0.30);}
+.r-3dhqw6{border-bottom-color:rgba(139,69,19,1.00);border-left-color:rgba(139,69,19,1.00);border-right-color:rgba(139,69,19,1.00);border-top-color:rgba(139,69,19,1.00);}
+.r-4a18lf{border-bottom-color:rgba(255,0,0,1.00);border-left-color:rgba(255,0,0,1.00);border-right-color:rgba(255,0,0,1.00);border-top-color:rgba(255,0,0,1.00);}
+.r-4mkfoz{border-bottom-left-radius:60px;border-bottom-right-radius:60px;border-top-left-radius:60px;border-top-right-radius:60px;}
+.r-5nw9cs{border-bottom-color:rgba(0,255,65,1.00);border-left-color:rgba(0,255,65,1.00);border-right-color:rgba(0,255,65,1.00);border-top-color:rgba(0,255,65,1.00);}
+.r-60ke3l{border-bottom-color:rgba(0,128,0,1.00);border-left-color:rgba(0,128,0,1.00);border-right-color:rgba(0,128,0,1.00);border-top-color:rgba(0,128,0,1.00);}
+.r-6ncur5{border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px;}
+.r-6t2glc{border-bottom-left-radius:40px;border-bottom-right-radius:40px;border-top-left-radius:40px;border-top-right-radius:40px;}
+.r-9x6qib{border-bottom-color:rgba(204,214,221,1.00);border-left-color:rgba(204,214,221,1.00);border-right-color:rgba(204,214,221,1.00);border-top-color:rgba(204,214,221,1.00);}
+.r-bztko3{overflow-x:visible;overflow-y:visible;}
+.r-cdmcib{border-bottom-left-radius:3px;border-bottom-right-radius:3px;border-top-left-radius:3px;border-top-right-radius:3px;}
+.r-cdy4wf{border-bottom-color:rgba(205,133,63,1.00);border-left-color:rgba(205,133,63,1.00);border-right-color:rgba(205,133,63,1.00);border-top-color:rgba(205,133,63,1.00);}
+.r-crgep1{margin:0px;}
+.r-d045u9{border-bottom-width:2px;border-left-width:2px;border-right-width:2px;border-top-width:2px;}
+.r-d23pfw{padding:24px;}
+.r-e22uts{border-bottom-color:rgba(142,68,173,1.00);border-left-color:rgba(142,68,173,1.00);border-right-color:rgba(142,68,173,1.00);border-top-color:rgba(142,68,173,1.00);}
+.r-edyy15{padding:8px;}
+.r-eg6o18{border-bottom-style:dashed;border-left-style:dashed;border-right-style:dashed;border-top-style:dashed;}
+.r-fx7oqy{border-bottom-color:rgba(0,0,255,1.00);border-left-color:rgba(0,0,255,1.00);border-right-color:rgba(0,0,255,1.00);border-top-color:rgba(0,0,255,1.00);}
+.r-h1l8tv{border-bottom-color:rgba(30,136,229,1.00);border-left-color:rgba(30,136,229,1.00);border-right-color:rgba(30,136,229,1.00);border-top-color:rgba(30,136,229,1.00);}
+.r-hv52eu{margin:12px;}
+.r-kdyh1x{border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-top-left-radius:6px;border-top-right-radius:6px;}
+.r-krxsd3{display:-webkit-box;}
+.r-lgvlli{flex:3;}
+.r-n370w6{margin:5px;}
+.r-nsbfu8{padding:16px;}
+.r-pzpyvt{border-bottom-width:5px;border-left-width:5px;border-right-width:5px;border-top-width:5px;}
+.r-qjjf9o{border-bottom-color:rgba(52,173,0,1.00);border-left-color:rgba(52,173,0,1.00);border-right-color:rgba(52,173,0,1.00);border-top-color:rgba(52,173,0,1.00);}
+.r-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-ry2h4h{border-bottom-color:rgba(204,204,204,1.00);border-left-color:rgba(204,204,204,1.00);border-right-color:rgba(204,204,204,1.00);border-top-color:rgba(204,204,204,1.00);}
+.r-sdzq82{border-bottom-color:rgba(255,255,255,0.30);border-left-color:rgba(255,255,255,0.30);border-right-color:rgba(255,255,255,0.30);border-top-color:rgba(255,255,255,0.30);}
+.r-t60dpp{padding:0px;}
+.r-wg31gx{border-bottom-color:rgba(49,53,56,1.00);border-left-color:rgba(49,53,56,1.00);border-right-color:rgba(49,53,56,1.00);border-top-color:rgba(49,53,56,1.00);}
+.r-xmenh6{border-bottom-color:rgba(76,175,80,1.00);border-left-color:rgba(76,175,80,1.00);border-right-color:rgba(76,175,80,1.00);border-top-color:rgba(76,175,80,1.00);}
+.r-xoduu5{display:inline-flex;}
+.r-y47klf{border-bottom-left-radius:20px;border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;}
+.r-yl2214{border-bottom-color:rgba(63,81,181,1.00);border-left-color:rgba(63,81,181,1.00);border-right-color:rgba(63,81,181,1.00);border-top-color:rgba(63,81,181,1.00);}
+.r-ywje51{margin:auto;}
+.r-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+[stylesheet-group="2.1"]{}
+.r-1009s2o{margin-bottom:15px;margin-top:15px;}
+.r-11f147o{padding-bottom:8px;padding-top:8px;}
+.r-1537yvj{margin-left:4px;margin-right:4px;}
+.r-1559e4e{padding-bottom:2px;padding-top:2px;}
+.r-17q4wm6{margin-left:5px;margin-right:5px;}
+.r-184id4b{margin-bottom:12px;margin-top:12px;}
+.r-1d7mnkm{padding-bottom:15px;padding-top:15px;}
+.r-1e084wi{padding-left:0px;padding-right:0px;}
+.r-1kti4dy{padding-left:25px;padding-right:25px;}
+.r-1mmae3n{padding-bottom:12px;padding-top:12px;}
+.r-1ntr0p{padding-left:5px;padding-right:5px;}
+.r-1rds9hb{padding-left:40px;padding-right:40px;}
+.r-1rsorjc{padding-left:36px;padding-right:36px;}
+.r-1ubuhtd{padding-left:10px;padding-right:10px;}
+.r-1xuzw63{margin-bottom:2px;margin-top:2px;}
+.r-1y6u10y{margin-bottom:20px;margin-top:20px;}
+.r-1yd117h{padding-bottom:7px;padding-top:7px;}
+.r-3o4zer{padding-left:12px;padding-right:12px;}
+.r-5o2xco{margin-bottom:5px;margin-top:5px;}
+.r-8dgmk1{margin-left:8px;margin-right:8px;}
+.r-bhtmuz{margin-left:20px;margin-right:20px;}
+.r-bplmwz{margin-bottom:10px;margin-top:10px;}
+.r-cnw61z{padding-bottom:4px;padding-top:4px;}
+.r-cxgwc0{padding-left:24px;padding-right:24px;}
+.r-dd0y9b{padding-bottom:20px;padding-top:20px;}
+.r-ddtstp{margin-bottom:0px;margin-top:0px;}
+.r-f8sm7e{margin-left:auto;margin-right:auto;}
+.r-is05cd{padding-left:8px;padding-right:8px;}
+.r-jdiy1a{margin-left:11px;margin-right:11px;}
+.r-jusfrs{margin-left:12px;margin-right:12px;}
+.r-lcslpx{margin-left:10px;margin-right:10px;}
+.r-n5f61p{margin-bottom:3px;margin-top:3px;}
+.r-n7gxbd{padding-left:4px;padding-right:4px;}
+.r-qq1thf{padding-left:30px;padding-right:30px;}
+.r-rehuqn{padding-bottom:5px;padding-top:5px;}
+.r-u9wvl5{padding-left:20px;padding-right:20px;}
+.r-ubg91z{padding-left:15px;padding-right:15px;}
+.r-ugi1tw{padding-left:5%;padding-right:5%;}
+.r-vuvdlw{padding-bottom:6px;padding-top:6px;}
+.r-w7s2jr{padding-bottom:16px;padding-top:16px;}
+.r-ytbthy{padding-bottom:10px;padding-top:10px;}
+[stylesheet-group="2.2"]{}
+.r-10s2tm5{left:0%;}
+.r-16o8guy{right:100%;}
+.r-1a11zyx{margin-right:12px;}
+.r-1cwvpvk{margin-left:12px;}
+.r-1e97lx8{margin-right:3px;}
+.r-1euzeng{padding-left:24px;}
+.r-1g4tz6n{margin-right:-14.5px;}
+.r-1h31txp{padding-right:16px;}
+.r-1lhn9r{margin-left:-14.5px;}
+.r-1sqnqi2{margin-left:3px;}
+.r-1vl2501{padding-right:24px;}
+.r-9mo606{margin-right:10px;}
+.r-c59us2{left:-3px;}
+.r-dqe1q{right:0%;}
+.r-qb41rp{margin-right:5px;}
+.r-rci37q{left:100%;}
+.r-uhung1{margin-left:10px;}
+.r-vpmibe{right:-3px;}
+.r-w67my2{padding-left:16px;}
+.r-wizibn{margin-left:5px;}
+[stylesheet-group="3"]{}
+.r-105ug2t{pointer-events:auto!important;}
+.r-105zemk{background-color:rgba(255,0,0,0.50);}
+.r-109y4c4{height:1px;}
+.r-10ptun7{height:16px;}
+.r-10v3vxq{transform:scaleX(-1);}
+.r-10x49cs{font-size:10px;}
+.r-10xqauy{padding-top:env(safe-area-inset-top);}
+.r-10xqg3i{line-height:60px;}
+.r-114ovsg{border-right-color:rgba(0,0,0,0.00);}
+.r-117bsoe{margin-bottom:20px;}
+.r-117jbs9{right:-10px;}
+.r-11ccaum{text-shadow:0px 0px 10px rgba(0,255,65,1.00);}
+.r-11dygr7{color:rgba(52,173,0,1.00);}
+.r-11j9u27{visibility:hidden;}
+.r-11mpjr4{background-color:rgba(223,223,223,1.00);}
+.r-11ubs0h{background-color:rgba(0,0,0,0.70);}
+.r-11udlyb{background-color:rgba(0,150,136,1.00);}
+.r-11v9fek{min-width:180px;}
+.r-11wg9zk{width:31%;}
+.r-11yh6sk{overflow-x:hidden;}
+.r-12283uu{background-color:rgba(30,42,56,1.00);}
+.r-123tt9{background-color:rgba(34,34,34,1.00);}
+.r-125h2sf{background-color:rgba(149,165,166,1.00);}
+.r-12et9rd{box-shadow:0px 2px 3.84px rgba(0,0,0,0.25);}
+.r-12f6czt{top:17px;}
+.r-12pp1o0{top:5px;}
+.r-12rkw8h{border-top-color:rgba(255,255,255,0.20);}
+.r-12rqra3{padding-bottom:6px;}
+.r-12vffkv>*{pointer-events:auto;}
+.r-12vffkv{pointer-events:none!important;}
+.r-12vwi6i{background-color:rgba(255,215,0,1.00);}
+.r-132bva{height:180px;}
+.r-135wba7{line-height:24px;}
+.r-136ojw6{z-index:2;}
+.r-13aq9py{animation-name:r-1iq689l;}
+.r-13hce6t{margin-left:4px;}
+.r-13qz1uu{width:100%;}
+.r-13tjlyg{transition-duration:0.1s;}
+.r-13w96dm{background-color:rgba(0,0,0,0.30);}
+.r-1472mwg{height:24px;}
+.r-14a9v6n{left:auto;}
+.r-14f9ury{background-color:rgba(68,68,68,1.00);}
+.r-14g73ha{height:15px;}
+.r-14gqq1x{margin-top:4px;}
+.r-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-14sbq61{background-color:rgba(33,150,243,1.00);}
+.r-150rngu{-webkit-overflow-scrolling:touch;}
+.r-154mtpf{min-width:110px;}
+.r-1551gxn{background-color:rgba(12,12,12,1.00);}
+.r-156q2ks{margin-top:10px;}
+.r-15a1up5{border-left-width:10px;}
+.r-15d164r{margin-bottom:10px;}
+.r-15zivkp{margin-bottom:4px;}
+.r-16pcm1t{gap:20px;}
+.r-16y2uox{flex-grow:1;}
+.r-173mn98{align-self:flex-end;}
+.r-173mzie{transform:scaleY(-1);}
+.r-1777fci{justify-content:center;}
+.r-17avde0{color:rgba(0,255,65,1.00);}
+.r-17bb2tj{animation-duration:0.75s;}
+.r-17bys5r{background-color:rgba(231,76,60,1.00);}
+.r-17c3jg3{background-color:rgba(0,0,0,0.80);}
+.r-17h7yt0{background-color:rgba(255,87,34,1.00);}
+.r-17ha32g{background-color:rgba(63,81,181,1.00);}
+.r-17leim2{background-repeat:repeat;}
+.r-17rnw9f{line-height:30px;}
+.r-17s6mgv{justify-content:flex-end;}
+.r-17tb59b{opacity:0.7;}
+.r-17tloay{opacity:0.6;}
+.r-17u3ijr{background-color:rgba(155,161,166,0.27);}
+.r-17x6qj0{width:45%;}
+.r-17z84rq{text-shadow:1px 1px 5px rgba(0,0,0,0.50);}
+.r-184en5c{z-index:1;}
+.r-1859fp8{background-color:rgba(255,0,0,0.80);}
+.r-188c7i6{box-shadow:0px 0px 10px rgba(33,150,243,1.00);}
+.r-18nhz7w{top:-3px;}
+.r-18u1ve8{color:rgba(255,255,255,0.40);}
+.r-18u37iz{flex-direction:row;}
+.r-18v0ysc{color:rgba(231,76,60,1.00);}
+.r-18yzcnr{height:22px;}
+.r-199wky7{width:30px;}
+.r-19h5ruw{margin-top:15px;}
+.r-19oahor{font-size:64px;}
+.r-19wcl01{box-shadow:0px 3px 3px rgba(0,0,0,0.40);}
+.r-19wmn03{width:20px;}
+.r-19z077z{touch-action:none;}
+.r-1a2p6p6{-webkit-text-decoration-style:solid;text-decoration-style:solid;}
+.r-1a80ab4{background-color:rgba(10,58,42,1.00);}
+.r-1a84fdz{text-shadow:0px 0px 10px rgba(0,255,255,1.00);}
+.r-1abnn5w{animation-play-state:paused;}
+.r-1acpoxo{width:36px;}
+.r-1adt9p7{box-shadow:0px 3px 5px rgba(0,0,0,0.40);}
+.r-1aiqnjv{font-family:monospace,monospace;}
+.r-1akxima{width:85%;}
+.r-1aockid{width:40px;}
+.r-1awozwy{align-items:center;}
+.r-1ay1djp{animation-duration:1s;}
+.r-1b43r93{font-size:14px;}
+.r-1b683b{text-shadow:1px 1px 3px rgba(0,0,0,0.70);}
+.r-1baxesd{min-width:50px;}
+.r-1c0yaa2{box-shadow:0px 1px 2px rgba(0,0,0,0.30);}
+.r-1c6unfx{forced-color-adjust:none;}
+.r-1c85bru{width:270px;}
+.r-1cmwbt1{gap:8px;}
+.r-1cq7inc{background-color:rgba(46,204,113,1.00);}
+.r-1d2f490{left:0px;}
+.r-1d4mawv{margin-right:4px;}
+.r-1d5kdc7{flex-direction:column-reverse;}
+.r-1ddef8g{-webkit-text-decoration-line:underline;text-decoration-line:underline;}
+.r-1dernwh{height:70%;}
+.r-1e7n97f{background-color:rgba(212,175,55,0.10);}
+.r-1ei5mc7{cursor:inherit;}
+.r-1enofrn{font-size:12px;}
+.r-1erltb3{background-color:rgba(255,215,0,0.85);}
+.r-1euycsn{flex-direction:row-reverse;}
+.r-1ewcgjf{box-shadow:0px 1px 3px rgba(0,0,0,0.5);}
+.r-1ey2ra3{width:70px;}
+.r-1eyzs5w{max-height:50px;}
+.r-1f529hi{line-height:14px;}
+.r-1f720gc{width:50%;}
+.r-1ff274t{text-align:right;}
+.r-1fwu9a4{background-color:rgba(52,152,219,1.00);}
+.r-1g6456j{background-color:rgba(255,0,0,1.00);}
+.r-1g7fiml{height:30px;}
+.r-1g80hic{opacity:0.8;}
+.r-1g94qm0{margin-top:5px;}
+.r-1ge9hsw{max-width:960px;}
+.r-1gkfh8e{font-size:11px;}
+.r-1glkqn6{width:80px;}
+.r-1gokkdy{background-color:rgba(136,14,79,1.00);}
+.r-1h0z5md{justify-content:flex-start;}
+.r-1h2t8mc{width:0px;}
+.r-1h67s5g{background-color:rgba(106,13,173,0.30);}
+.r-1habvwh{align-items:flex-start;}
+.r-1hlnpa{height:3px;}
+.r-1i10wst{font-size:18px;}
+.r-1i6wzkk{-moz-transition-property:opacity;-webkit-transition-property:opacity;transition-property:opacity;}
+.r-1i71y14{gap:14px;}
+.r-1ialyx4{background-color:rgba(85,85,85,1.00);}
+.r-1ielgck{animation-duration:300ms;}
+.r-1ifxtd0{margin-bottom:16px;}
+.r-1ik5qf4{max-width:500px;}
+.r-1iln25a{word-wrap:normal;}
+.r-1imd94c{margin-left:-10px;}
+.r-1inkyih{font-size:17px;}
+.r-1iud8zs{height:50px;}
+.r-1iusvr4{flex-basis:0px;}
+.r-1ixa6m7{top:35%;}
+.r-1j5vo0j{background-color:rgba(63,81,181,0.20);}
+.r-1janqcz{width:16px;}
+.r-1jg9483{width:8px;}
+.r-1jj8364{margin-left:auto;}
+.r-1jkjb{margin-left:8px;}
+.r-1jx9daf{border-bottom-width:20px;}
+.r-1kb76zh{margin-right:8px;}
+.r-1kfrs79{font-weight:600;}
+.r-1ki14p2{top:10px;}
+.r-1kihuf0{align-self:center;}
+.r-1kzoiro{background-color:rgba(231,76,60,0.70);}
+.r-1ld3bg{top:-4px;}
+.r-1ldzwu0{animation-timing-function:linear;}
+.r-1ljys5s{background-color:rgba(155,89,182,0.30);}
+.r-1lkpiv3{background-color:rgba(63,81,181,0.10);}
+.r-1loqt21{cursor:pointer;}
+.r-1m5klbg{background-color:rgba(255,0,0,0.30);}
+.r-1m9ckf1{background-color:rgba(51,51,51,1.00);}
+.r-1mi0q7o{padding-bottom:10px;}
+.r-1mlwlqe{flex-basis:auto;}
+.r-1mnahxq{margin-top:0px;}
+.r-1mrlafo{background-position:0;}
+.r-1muvv40{animation-iteration-count:infinite;}
+.r-1n430bm{left:5px;}
+.r-1ncxa7q{background-color:rgba(200,50,0,1.00);}
+.r-1nfxoui{right:25%;}
+.r-1nia8f8{background-color:rgba(52,173,0,0.80);}
+.r-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-1nlw0im{bottom:8px;}
+.r-1no09lo{margin-top:28px;}
+.r-1nxhmzv{margin-bottom:28px;}
+.r-1ny4l3l{outline-style:none;}
+.r-1ocf4r9{scroll-snap-type:y mandatory;}
+.r-1oji4za{width:30%;}
+.r-1oox17p{background-color:rgba(240,240,240,1.00);}
+.r-1or9b2r{height:10px;}
+.r-1oradpa{background-color:rgba(10,101,34,1.00);}
+.r-1oszu61{align-items:stretch;}
+.r-1otgn73{touch-action:manipulation;}
+.r-1owvusn{border-bottom-color:rgba(255,255,255,0.05);}
+.r-1p0dtai{bottom:0px;}
+.r-1pcdyqj{margin-right:6px;}
+.r-1ph75f1{height:80px;}
+.r-1pi2tsx{height:100%;}
+.r-1pm8pkb{font-family:Courier;}
+.r-1pngvkx{background-color:rgba(255,215,0,0.80);}
+.r-1q4a3qg{color:rgba(255,204,0,1.00);}
+.r-1qd0xha{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.r-1qtwgnj{color:rgba(11,83,69,1.00);}
+.r-1qulhi1{animation-name:r-1pzkwqh;}
+.r-1qxgc49{padding-top:15px;}
+.r-1r2mtzg{background-color:rgba(0,200,255,0.50);}
+.r-1r4fvd0{color:rgba(82,169,255,1.00);}
+.r-1r74h94{left:8px;}
+.r-1r8g8re{height:36px;}
+.r-1ra0lkn{font-size:30px;}
+.r-1rn8j8i{margin-top:-5px;}
+.r-1rngwi6{margin-left:6px;}
+.r-1rnoaur{overflow-y:auto;}
+.r-1rqp49e{color:rgba(255,255,255,0.50);}
+.r-1rtrf6b{box-shadow:0px 0px 15px rgba(0,255,65,1.00);}
+.r-1s3egr7{z-index:100;}
+.r-1sggi4d{background-color:rgba(255,250,240,1.00);}
+.r-1sqbbbr{background-color:rgba(136,136,136,1.00);}
+.r-1ssbvtb{gap:12px;}
+.r-1sv84sj{padding-bottom:30px;}
+.r-1sxrcry{background-size:auto;}
+.r-1t68eob{left:10px;}
+.r-1t7gutv{box-shadow:0px 4px 5px rgba(0,0,0,0.30);}
+.r-1tv11tl{box-shadow:0px 2px 2px rgba(0,0,0,0.30);}
+.r-1uaz6oj{border-bottom-color:rgba(255,255,255,0.10);}
+.r-1udbk01{text-overflow:ellipsis;}
+.r-1ugchlj{height:44px;}
+.r-1ui5ee8{font-size:32px;}
+.r-1uq9rlk{max-height:200px;}
+.r-1uvevde{background-color:rgba(142,68,173,1.00);}
+.r-1uvjm2q{width:32%;}
+.r-1uwte3a{padding-bottom:40px;}
+.r-1uypc71{animation-timing-function:ease-in;}
+.r-1v2oles{top:50%;}
+.r-1v78gzs{color:rgba(10,126,164,1.00);}
+.r-1vr29t4{font-weight:800;}
+.r-1vscm7w{box-shadow:0px 2px 5px rgba(0,0,0,0.30);}
+.r-1w2pmg{height:0px;}
+.r-1w59yr1{top:-10px;}
+.r-1w6e6rj{flex-wrap:wrap;}
+.r-1wbh5a2{flex-shrink:1;}
+.r-1wfhzrg{height:120px;}
+.r-1whssh0{background-color:rgba(243,156,18,1.00);}
+.r-1wnfvn{text-shadow:1px 1px 2px rgba(0,0,0,0.70);}
+.r-1wrgp41{text-shadow:0px 0px 10px rgba(255,0,0,1.00);}
+.r-1wtj0ep{justify-content:space-between;}
+.r-1wyvozj{left:50%;}
+.r-1wyyakw{z-index:-1;}
+.r-1wzrnnt{margin-top:16px;}
+.r-1x0uki6{margin-top:20px;}
+.r-1x31b7q{background-color:rgba(0,0,0,0.05);}
+.r-1x35g6{font-size:24px;}
+.r-1x93onp{width:110px;}
+.r-1xa5gvi{background-color:rgba(255,204,0,1.00);}
+.r-1xcajam{position:fixed;}
+.r-1xce0ei{width:25%;}
+.r-1xlawde{text-shadow:2px 2px 3px rgba(0,0,0,1.00);}
+.r-1xnzce8{-moz-user-select:text;-webkit-user-select:text;user-select:text;}
+.r-1xpe3eb{transform:rotate(90deg);}
+.r-1xt5hb3{background-color:rgba(232,234,246,1.00);}
+.r-1xzupcd{width:13px;}
+.r-1yef0xd{animation-name:r-11cv4x;}
+.r-1yf5u8z{background-color:rgba(52,73,94,1.00);}
+.r-1yis5wz{color:rgba(204,204,204,1.00);}
+.r-1zej2g{background-color:rgba(158,158,158,1.00);}
+.r-28fyn4{background-color:rgba(46,204,113,0.30);}
+.r-2eszeu::-webkit-scrollbar{display:none}
+.r-2eszeu{scrollbar-width:none;}
+.r-2tavb8{background-color:rgba(0,0,0,0.60);}
+.r-2zkep1{transform:rotate(5deg);}
+.r-30o5oe{-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none;}
+.r-356f0p{letter-spacing:0.35px;}
+.r-36ujnk{font-style:italic;}
+.r-37tt59{line-height:32px;}
+.r-3da1kt{height:8px;}
+.r-3dj86z{background-color:rgba(120,144,156,1.00);}
+.r-3gd6gq{color:rgba(0,255,255,1.00);}
+.r-3mc0re{right:8px;}
+.r-3s2u2q{white-space:nowrap;}
+.r-3t50a8{background-color:rgba(230,126,34,0.20);}
+.r-417010{z-index:0;}
+.r-4c3g2f{margin-top:-1.5px;}
+.r-4d76ec{height:200px;}
+.r-4gszlv{background-size:cover;}
+.r-4kdocq{background-color:rgba(231,76,60,0.10);}
+.r-4laqgk{box-shadow:0px 0px 15px rgba(255,51,51,1.00);}
+.r-4m99jg{max-width:320px;}
+.r-4nv2lb{color:rgba(255,82,82,1.00);}
+.r-4v7adb{height:5px;}
+.r-56yt86{box-shadow:0px 3px 3px rgba(0,0,0,0.33);}
+.r-57dg7b{background-color:rgba(0,0,255,1.00);}
+.r-580adz{gap:5px;}
+.r-5hecs3{background-color:rgba(212,175,55,1.00);}
+.r-5kkj8d{border-top-width:1px;}
+.r-5oul0u{margin-bottom:8px;}
+.r-5q6bms{background-color:rgba(255,0,0,0.40);}
+.r-5zqcb5{color:rgba(255,255,255,0.70);}
+.r-60vfwk{min-width:1px;}
+.r-633pao{pointer-events:none!important;}
+.r-6dt33c{opacity:1;}
+.r-6e0ovw{width:80%;}
+.r-6gpygo{margin-bottom:12px;}
+.r-6lhrus{background-color:rgba(255,215,0,0.15);}
+.r-6taxm2:-ms-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::-moz-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::-webkit-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6vter9{background-color:rgba(0,34,17,1.00);}
+.r-70510l{margin-bottom:-20px;}
+.r-726pan{width:31px;}
+.r-76blku{height:21px;}
+.r-7cikom{font-size:inherit;}
+.r-7e3cka{text-shadow:1px 1px 2px rgba(0,0,0,0.50);}
+.r-7fk11b{text-shadow:2px 2px 5px rgba(0,0,0,1.00);}
+.r-7l9xyp{background-color:rgba(255,255,255,0.20);}
+.r-7q8q6z{cursor:default;}
+.r-7r4507{height:150px;}
+.r-7wl2m5{background-color:rgba(58,88,117,1.00);}
+.r-855088{border-left-color:rgba(0,0,0,0.00);}
+.r-8akbws{-webkit-box-orient:vertical;}
+.r-8ay8q1{letter-spacing:0.1px;}
+.r-8eqzbf{right:10px;}
+.r-8iyg4o{box-shadow:0px 0px 15px rgba(0,153,255,1.00);}
+.r-8u784m{background-color:rgba(30,58,138,1.00);}
+.r-947o9n{background-color:rgba(106,13,173,1.00);}
+.r-97e31f{padding-bottom:env(safe-area-inset-bottom);}
+.r-9njtsq{height:130px;}
+.r-9zvdko{height:220px;}
+.r-a1w0r5{width:48%;}
+.r-a2tzq0{justify-content:space-around;}
+.r-a4n0a9{color:rgba(255,215,0,1.00);}
+.r-adyw6z{font-size:20px;}
+.r-ael61f{background-color:rgba(52,173,0,0.10);}
+.r-agouwx{transform:translateZ(0);}
+.r-ah5dr5>*{pointer-events:none;}
+.r-ah5dr5{pointer-events:auto!important;}
+.r-am3kiz{color:rgba(255,255,255,0.90);}
+.r-aruset{font-weight:200;}
+.r-atnv13{height:160px;}
+.r-axrpqp{background-color:rgba(253,95,0,1.00);}
+.r-b8lwoo{width:100px;}
+.r-bgnin{min-width:150px;}
+.r-bi4vy9{transform:translateY(100%);}
+.r-bis4jr{background-color:rgba(155,89,182,1.00);}
+.r-bnwqim{position:relative;}
+.r-bt1l66{min-height:20px;}
+.r-buy8e9{overflow-y:hidden;}
+.r-bv2aro{padding-left:env(safe-area-inset-left);}
+.r-c68hjy{color:rgba(161,161,161,1.00);}
+.r-c8f5pn{background-color:rgba(255,255,255,0.10);}
+.r-cb4phx{bottom:-60px;}
+.r-cfp7ip{width:60px;}
+.r-cjox8e{background-color:rgba(241,196,15,1.00);}
+.r-cpa5s6{scroll-snap-align:start;}
+.r-cqee49{color:rgba(0,0,0,1.00);}
+.r-d0pm55{margin-bottom:5px;}
+.r-dc5v9k{height:80%;}
+.r-dc9n05{background-color:rgba(212,175,55,0.20);}
+.r-dkge59{background-color:rgba(170,184,194,1.00);}
+.r-dnmrzs{max-width:100%;}
+.r-drfeu3{background-color:rgba(0,0,0,0.50);}
+.r-e7q0ms{width:90%;}
+.r-eafdt9{transition-duration:0.15s;}
+.r-ebwn4k{animation-name:r-q67da2;}
+.r-ee49om{background-color:rgba(244,67,54,1.00);}
+.r-ehq7j7{background-size:contain;}
+.r-ej9dm1{background-color:rgba(44,62,80,1.00);}
+.r-ep8a71{background-color:rgba(17,17,17,1.00);}
+.r-epq5cr{height:2px;}
+.r-eqz5dr{flex-direction:column;}
+.r-eu3ka{height:40px;}
+.r-evnaw{font-size:22px;}
+.r-f1odvy{margin-bottom:6px;}
+.r-fdjqy7{text-align:left;}
+.r-ff8gi{height:110px;}
+.r-g1pmzj{left:25%;}
+.r-g3mlsw{animation-name:r-t2lo5v;}
+.r-ghxds0{transform:translateY(0%);}
+.r-gtdqiz{position:-webkit-sticky;position:sticky;}
+.r-h0d30l{height:28px;}
+.r-h1js2l{font-size:25px;}
+.r-h3f8nf{min-height:100px;}
+.r-hbpseb{line-height:22px;}
+.r-hnu01a{gap:15px;}
+.r-howw7u{color:rgba(255,0,0,1.00);}
+.r-hr69ez{background-color:rgba(0,0,0,0.15);}
+.r-hx3jcc{background-color:rgba(16,24,48,1.00);}
+.r-hxflta{padding-right:env(safe-area-inset-right);}
+.r-i1ajvm{background-color:rgba(33,150,243,0.30);}
+.r-i7x8if{background-color:rgba(44,62,80,0.70);}
+.r-icoktb{opacity:0.5;}
+.r-inbvtb{right:5px;}
+.r-iphfwy{padding-bottom:4px;}
+.r-ipm5af{top:0px;}
+.r-j03pct{min-width:80px;}
+.r-j6uipb{color:rgba(253,95,0,1.00);}
+.r-j7ns9g{box-shadow:0px 1px 3px rgba(0,0,0,0.20);}
+.r-ju8cv5{box-shadow:0px 0px 10px rgba(244,67,54,1.00);}
+.r-jw9rq8{background-color:rgba(139,69,19,1.00);}
+.r-jwijun{min-width:30%;}
+.r-jwli3a{color:rgba(255,255,255,1.00);}
+.r-k200y{align-self:flex-start;}
+.r-kai0ez{background-color:rgba(0,131,143,1.00);}
+.r-kbtpn4{margin-top:-20px;}
+.r-kemksi{background-color:rgba(0,0,0,1.00);}
+.r-key0ze{height:240px;}
+.r-kizejy{color:rgba(155,161,166,1.00);}
+.r-knv0ih{margin-top:8px;}
+.r-ku1wi2{margin-bottom:15px;}
+.r-lltvgl{overflow-x:auto;}
+.r-lpb231{height:168px;}
+.r-lrsllp{width:24px;}
+.r-lrvibr{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-majxgm{font-weight:500;}
+.r-mfh4gg{scroll-snap-type:x mandatory;}
+.r-mhe3cw{z-index:10;}
+.r-mro3nb{background-color:rgba(21,23,24,1.00);}
+.r-n0puxl{top:auto;}
+.r-n1h2e2{background-color:rgba(18,18,18,1.00);}
+.r-n6v787{font-size:13px;}
+.r-ndvmtr{background-color:rgba(25,25,112,1.00);}
+.r-nidz89{z-index:6;}
+.r-njen7d{color:rgba(212,175,55,1.00);}
+.r-np8jz3{background-color:rgba(0,77,37,1.00);}
+.r-nu8ryv{transform:rotate(15deg);}
+.r-nvplwv{animation-timing-function:ease-out;}
+.r-nwxazl{line-height:40px;}
+.r-o0pt58{bottom:5px;}
+.r-o4n3w5{width:23px;}
+.r-o52ifk{height:100px;}
+.r-ohme6j{text-shadow:1px 1px 3px rgba(0,0,0,0.50);}
+.r-orgf3d{opacity:0;}
+.r-pezta{z-index:5;}
+.r-phschg{background-color:rgba(11,83,69,1.00);}
+.r-q4m81j{text-align:center;}
+.r-qagzgf{background-color:rgba(231,76,60,0.30);}
+.r-qfi6ny{top:30000px;}
+.r-qfuwte{color:rgba(63,81,181,1.00);}
+.r-qklmqi{border-bottom-width:1px;}
+.r-qn3fzs{padding-bottom:24px;}
+.r-qqjak8{font-size:9px;}
+.r-qs1h5q{background-color:rgba(0,100,255,0.10);}
+.r-rjixqe{line-height:20px;}
+.r-rs94m5{background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgMSAxIgogICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICA8cGF0aAogICAgIGQ9Ik0gMC4wNDAzODA1OSwwLjYyNjc3NjcgMC4xNDY0NDY2MSwwLjUyMDcxMDY4IDAuNDI5Mjg5MzIsMC44MDM1NTMzOSAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IE0gMC4yMTcxNTcyOSwwLjgwMzU1MzM5IDAuODUzNTUzMzksMC4xNjcxNTcyOSAwLjk1OTYxOTQxLDAuMjczMjIzMyAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IgogICAgIGlkPSJyZWN0Mzc4MCIKICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIiAvPgo8L3N2Zz4K");}
+.r-rw9vyn{width:-40px;}
+.r-s1mr12{background-color:rgba(127,140,141,1.00);}
+.r-s4dx8p{background-color:rgba(102,102,102,1.00);}
+.r-s53p2z{background-color:rgba(76,175,80,1.00);}
+.r-sfbmgh{z-index:9999;}
+.r-sgbo92{opacity:0.9;}
+.r-so7y2g{line-height:64px;}
+.r-ss4zfz{height:260px;}
+.r-tmojj0{z-index:30;}
+.r-tnhvq3{border-bottom-color:rgba(255,215,0,1.00);}
+.r-tsynxw{text-transform:uppercase;}
+.r-ttb5dx{width:50px;}
+.r-u5i9fs{background-color:rgba(255,215,0,0.20);}
+.r-u6sd8q{background-repeat:no-repeat;}
+.r-u8s1d{position:absolute;}
+.r-u92y06{background-color:rgba(255,165,0,1.00);}
+.r-uaa2di{gap:10px;}
+.r-ubezar{font-size:16px;}
+.r-uho16t{font-size:34px;}
+.r-uk86fp{background-color:rgba(0,77,64,1.00);}
+.r-uoibet{transform:rotate(180deg);}
+.r-uq86cj{border-bottom-color:rgba(212,175,55,1.00);}
+.r-uvuy5l{height:60px;}
+.r-v1sgqt{background-color:rgba(255,255,255,0.15);}
+.r-v9ozmu{background-color:rgba(230,126,34,1.00);}
+.r-vacyoi{padding-bottom:64px;}
+.r-van48c{caret-color:transparent;}
+.r-vboj7i{top:-7px;}
+.r-vem4zt{transform-origin:60px 5px;}
+.r-vgvm5k{border-bottom-color:rgba(0,0,0,0.10);}
+.r-vvn4in{background-position:center;}
+.r-vw2c0b{font-weight:bold;}
+.r-w0rwwh{border-right-width:10px;}
+.r-w1gamr{color:rgba(46,204,113,1.00);}
+.r-w1gdaq{background-color:rgba(0,255,65,1.00);}
+.r-wc24c3{z-index:20;}
+.r-wd21to{color:rgba(76,175,80,1.00);}
+.r-wfioy6{background-color:rgba(0,255,65,0.30);}
+.r-wfqgy4{transition-duration:100ms;}
+.r-wgabs5{border-bottom-width:2px;}
+.r-wl3dpe{box-shadow:0px 0px 10px rgba(0,255,65,0.80);}
+.r-wr9vkk{margin-bottom:3px;}
+.r-ws9h79{left:4px;}
+.r-wtomvd{background-color:rgba(0,255,65,0.70);}
+.r-x3cy2q{background-size:100% 100%;}
+.r-x8cv09{box-shadow:0px 5px 10px rgba(0,0,0,0.70);}
+.r-xaggoz{max-width:350px;}
+.r-xb2eav{font-size:40px;}
+.r-xkccd0{transform:translateY(-5px) rotate(180deg);}
+.r-xlh5cr{color:rgba(139,69,19,1.00);}
+.r-xwzi2g{border-bottom-color:rgba(255,255,255,0.15);}
+.r-xx3c9p{animation-name:r-imtty0;}
+.r-xydr3q{background-color:rgba(39,174,96,1.00);}
+.r-y3rmyz{width:120px;}
+.r-y3t9qe{margin-right:15px;}
+.r-y449vd{text-shadow:1px 1px 1px rgba(0,0,0,0.50);}
+.r-y54riw{min-width:250px;}
+.r-y768bi{box-shadow:0px 4px 4px rgba(0,0,0,0.50);}
+.r-y76kdm{background-color:rgba(197,202,233,1.00);}
+.r-y7v2we{background-color:rgba(32,36,37,1.00);}
+.r-yc9v9c{width:22px;}
+.r-yjuy3q{background-color:rgba(210,180,140,1.00);}
+.r-yx1vjz{background-color:rgba(112,0,0,1.00);}
+.r-z80fyv{height:20px;}
+.r-z88o2r{margin-left:-60px;}
+.r-zchlnj{right:0px;}
+.r-ztyd71{background-color:rgba(0,0,0,0.20);}
+.r-zz5t5d{font-size:28px;}
+@-webkit-keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@-webkit-keyframes r-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@-webkit-keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@-webkit-keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@-webkit-keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@-webkit-keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}
+@keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@keyframes r-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><style id="expo-generated-fonts" type="text/css">@font-face{font-family:SpaceMono;src:url(/assets/assets/fonts/SpaceMono-Regular.49a79d66bdea2debf1832bf4d7aca127.ttf);font-display:auto}
+@font-face{font-family:FontAwesome;src:url(/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.b06871f281fee6b241d60582ae9369b9.ttf);font-display:auto}</style><link rel="preload" href="/assets/assets/fonts/SpaceMono-Regular.49a79d66bdea2debf1832bf4d7aca127.ttf" as="font" crossorigin="" /><link rel="preload" href="/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.b06871f281fee6b241d60582ae9369b9.ttf" as="font" crossorigin="" /><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script><link rel="shortcut icon" href="/favicon.ico" /></head><body><div id="root"><div class="css-175oi2r r-13awgt0"><!--$--><div class="css-175oi2r r-13awgt0"><div class="css-175oi2r r-13awgt0 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color:rgba(242,242,242,1.00);display:flex"><div class="css-175oi2r r-13awgt0"><div class="css-175oi2r r-13awgt0"><!--$--><div class="css-175oi2r r-13awgt0" style="flex-direction:column"><div class="css-175oi2r r-13awgt0 r-1udh08x"><div class="css-175oi2r r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="z-index:0"><div class="css-175oi2r r-13awgt0" style="background-color:rgba(242,242,242,1.00)"><div class="css-175oi2r r-13awgt0"><!--$--><div class="css-175oi2r r-n1h2e2 r-13awgt0"><div class="css-175oi2r r-13awgt0"><div class="css-175oi2r r-1p0dtai r-1d2f490 r-17tloay r-u8s1d r-zchlnj r-ipm5af"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(26,32,53,1.00), rgba(13,17,23,1.00))"><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:1.1470666339436386%;top:73.7310665414423%;width:1.299717748545559px;height:3.9781594601557444px;opacity:0.5822737787257879"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:76.02480104706437%;top:15.543676341193823%;width:2.331590981088622px;height:1.868721137604684px;opacity:0.5871475463248753"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:6.807957572079637%;top:63.85666483540724%;width:4.462776868682591px;height:1.2946874727144806px;opacity:0.25519449119873705"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:98.18491521070194%;top:10.13451432196122%;width:2.430004941641192px;height:4.477343374805748px;opacity:0.2661220081189588"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:2.021796194547898%;top:11.67396669088574%;width:2.9875199347456247px;height:2.8684983649612557px;opacity:0.3867964269680797"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:70.44545789627905%;top:27.001206745313922%;width:1.7572797560104991px;height:4.014526228456889px;opacity:0.18576225383491876"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:29.15038622949315%;top:63.78874491099384%;width:3.850868880106609px;height:1.440347688436975px;opacity:0.38319366151537626"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:88.61382520005417%;top:19.18614223738686%;width:1.8860239599658932px;height:4.5201692150676065px;opacity:0.4103262947675641"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:83.90689684972867%;top:19.769888869347362%;width:2.559680714278344px;height:1.0451402510071643px;opacity:0.44847307260714286"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:56.5278545136179%;top:14.488554363584427%;width:4.45509977732673px;height:4.084818000633917px;opacity:0.17122571678546575"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:49.41868333142858%;top:82.76148481127818%;width:2.2102269533323646px;height:2.1300491522432656px;opacity:0.5180730476903537"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:14.115687948201394%;top:69.03331589831316%;width:1.2202337282029312px;height:3.562979270983499px;opacity:0.5820015050564968"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:17.94431801552687%;top:77.11553714707966%;width:4.9027681672236145px;height:1.9005017374677342px;opacity:0.20830300838664176"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:26.759079579366627%;top:78.37739863152385%;width:2.4060143639351397px;height:3.543868637816445px;opacity:0.4688053060094949"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:10.798442631201333%;top:0.1680094338741167%;width:1.532873738210208px;height:1.9275227061596132px;opacity:0.15885118418484892"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:34.391087175696434%;top:66.30738897149666%;width:4.0693722772803005px;height:4.484584187717417px;opacity:0.2646813338474121"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:59.312559502200536%;top:13.020514083375545%;width:4.367113295917774px;height:4.420948588955027px;opacity:0.3006090533033341"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:54.88817918907416%;top:59.486084547284726%;width:3.9803236321812836px;height:2.9740030032358025px;opacity:0.14303180214235214"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:20.59992984326977%;top:35.55261463476334%;width:2.6458139548390003px;height:4.911143675497054px;opacity:0.37658797022883195"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:39.431763591510304%;top:24.554250748288876%;width:1.1394845596851777px;height:4.268982840713529px;opacity:0.38607388111638385"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:46.28365287554792%;top:29.131504082738303%;width:3.5792916305138185px;height:4.70947266167029px;opacity:0.21803367456543102"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:46.12255874460598%;top:83.50086956034895%;width:2.5804356622241293px;height:4.705432067767697px;opacity:0.5099472970454471"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:87.9228456797732%;top:46.671989911452094%;width:1.2468731880901247px;height:1.8817688242482795px;opacity:0.5748703102814455"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:74.26597426279106%;top:5.707577039791056%;width:3.298359937227201px;height:3.1811228209633677px;opacity:0.4422245811014597"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:6.756391650611215%;top:47.248360818617876%;width:3.4015044868973163px;height:4.311845397021174px;opacity:0.11126136246904264"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:86.76937856072296%;top:13.10715649318064%;width:2.5329826431176627px;height:4.4492691146549px;opacity:0.16952289428266445"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:1.709067598881342%;top:30.46205537448534%;width:1.8980014042713007px;height:4.496816000498517px;opacity:0.5470822220505782"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:49.488237761513034%;top:68.37913046398812%;width:3.616511089326564px;height:1.5795966039877607px;opacity:0.38626233734785576"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:6.634195495909134%;top:33.08738278562369%;width:4.360846793918084px;height:4.918542134379936px;opacity:0.39940263661604547"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:90.59076925833085%;top:28.16920535371663%;width:4.029377188682199px;height:4.406596340182683px;opacity:0.4411771481134622"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:56.90700882219095%;top:30.3667956376386%;width:4.409171116044013px;height:2.665569299905397px;opacity:0.3927764145005155"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:61.820213554236794%;top:44.452124573687634%;width:2.485985607987872px;height:4.190886920093736px;opacity:0.206177189723483"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:80.32310268815183%;top:50.653618309377244%;width:4.926159723274504px;height:4.917500734925904px;opacity:0.5743005603467171"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:85.00746274106154%;top:98.82982775033075%;width:3.6576745780777564px;height:1.5755679379252552px;opacity:0.24002000015327454"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:69.88941214733688%;top:31.95489729153751%;width:3.347195948860257px;height:3.598403635855856px;opacity:0.315186915906689"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:37.76987385071848%;top:98.04230874308453%;width:2.4651655099065737px;height:1.5352594954431105px;opacity:0.2531590339564813"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:10.88625751239185%;top:58.17663377861195%;width:4.784538501913123px;height:3.762578886158039px;opacity:0.1372551870321254"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:22.535593548258113%;top:20.899905224191386%;width:3.212837460794506px;height:2.539750506321486px;opacity:0.5406967197347285"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:79.62642055935913%;top:20.724655663606285%;width:3.459069914599156px;height:4.005032733529169px;opacity:0.11397689294096705"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:46.79065573679162%;top:50.273620354012635%;width:3.3016359288418418px;height:4.848197411203876px;opacity:0.43837549579892165"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:56.52671809114362%;top:22.078120944175982%;width:3.5509572242367993px;height:1.3735497224810382px;opacity:0.4185494001249276"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:67.95565006466782%;top:14.748670681402887%;width:2.420236026546144px;height:3.4722513577287284px;opacity:0.5989697476020621"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:16.032913713354247%;top:4.629073928387872%;width:3.910653398567474px;height:4.3954312370585376px;opacity:0.5746879078564967"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:91.17434933666956%;top:24.044682455075783%;width:1.1772827501197876px;height:1.2049366157207517px;opacity:0.47786774504896445"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:47.443004935864906%;top:69.95425275940399%;width:2.158275843134657px;height:1.5526956811893387px;opacity:0.2940290951548038"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:50.232860472202546%;top:24.74877669382771%;width:4.0942895296850885px;height:2.010417807799019px;opacity:0.5864561855092199"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:21.851474712217424%;top:20.576595994709667%;width:2.6554071506231933px;height:2.623272051545367px;opacity:0.5015185692135794"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:76.02488889744325%;top:49.458925535651055%;width:4.043071029265773px;height:4.052173851132603px;opacity:0.5908972966383055"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:86.3584863523634%;top:35.76502193680242%;width:2.8421168093949953px;height:2.9306012799871892px;opacity:0.5849857665211045"></div><div class="css-175oi2r r-14lw9ot r-1dzdj1l r-u8s1d" style="left:25.84416577438948%;top:59.69293278926031%;width:4.388419632122026px;height:1.13138736856504px;opacity:0.10236247887980102"></div></div></div><div class="css-175oi2r r-2tavb8 r-13awgt0"><div class="css-175oi2r r-150rngu r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-agouwx r-2eszeu"><div class="css-175oi2r r-16y2uox r-1sv84sj"><div class="css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep r-ubg91z r-1qxgc49 r-13qz1uu"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-eu3ka r-9mo606 r-1aockid"><svg width="100%" height="100%" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" xml="
+&lt;svg width=&quot;120&quot; height=&quot;120&quot; viewBox=&quot;0 0 120 120&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;rect width=&quot;120&quot; height=&quot;120&quot; rx=&quot;20&quot; fill=&quot;#1E1E2E&quot;/&gt;
+  &lt;path d=&quot;M43.5 35C39.9101 35 37 37.9101 37 41.5V81C37 84.5899 39.9101 87.5 43.5 87.5H83C86.5899 87.5 89.5 84.5899 89.5 81V41.5C89.5 37.9101 86.5899 35 83 35H43.5Z&quot; fill=&quot;#FFD700&quot; stroke=&quot;#FFFFFF&quot; stroke-width=&quot;2&quot;/&gt;
+  &lt;circle cx=&quot;47&quot; cy=&quot;45&quot; r=&quot;6&quot; fill=&quot;#E91E63&quot;/&gt;
+  &lt;circle cx=&quot;60&quot; cy=&quot;45&quot; r=&quot;6&quot; fill=&quot;#9C27B0&quot;/&gt;
+  &lt;circle cx=&quot;73&quot; cy=&quot;45&quot; r=&quot;6&quot; fill=&quot;#3F51B5&quot;/&gt;
+  &lt;circle cx=&quot;47&quot; cy=&quot;59&quot; r=&quot;6&quot; fill=&quot;#2196F3&quot;/&gt;
+  &lt;circle cx=&quot;60&quot; cy=&quot;59&quot; r=&quot;6&quot; fill=&quot;#00BCD4&quot;/&gt;
+  &lt;circle cx=&quot;73&quot; cy=&quot;59&quot; r=&quot;6&quot; fill=&quot;#4CAF50&quot;/&gt;
+  &lt;circle cx=&quot;47&quot; cy=&quot;73&quot; r=&quot;6&quot; fill=&quot;#FFEB3B&quot;/&gt;
+  &lt;circle cx=&quot;60&quot; cy=&quot;73&quot; r=&quot;6&quot; fill=&quot;#FF9800&quot;/&gt;
+  &lt;circle cx=&quot;73&quot; cy=&quot;73&quot; r=&quot;6&quot; fill=&quot;#F44336&quot;/&gt;
+  &lt;path d=&quot;M30 32L23 25L22 50L30 32Z&quot; fill=&quot;#FFD700&quot;/&gt;
+  &lt;path d=&quot;M90 32L97 25L98 50L90 32Z&quot; fill=&quot;#FFD700&quot;/&gt;
+  &lt;path d=&quot;M60 23L67 17V30L60 23Z&quot; fill=&quot;#FFD700&quot;/&gt;
+  &lt;path d=&quot;M60 97L67 103V90L60 97Z&quot; fill=&quot;#FFD700&quot;/&gt;
+  &lt;path d=&quot;M21 62L17 55H30L21 62Z&quot; fill=&quot;#FFD700&quot;/&gt;
+  &lt;path d=&quot;M99 62L103 55H90L99 62Z&quot; fill=&quot;#FFD700&quot;/&gt;
+&lt;/svg&gt;
+"><rect width="120" height="120" rx="20" fill="#1E1E2E"></rect><path d="M43.5 35C39.9101 35 37 37.9101 37 41.5V81C37 84.5899 39.9101 87.5 43.5 87.5H83C86.5899 87.5 89.5 84.5899 89.5 81V41.5C89.5 37.9101 86.5899 35 83 35H43.5Z" fill="#FFD700" stroke="#FFFFFF" stroke-width="2"></path><circle cx="47" cy="45" r="6" fill="#E91E63"></circle><circle cx="60" cy="45" r="6" fill="#9C27B0"></circle><circle cx="73" cy="45" r="6" fill="#3F51B5"></circle><circle cx="47" cy="59" r="6" fill="#2196F3"></circle><circle cx="60" cy="59" r="6" fill="#00BCD4"></circle><circle cx="73" cy="59" r="6" fill="#4CAF50"></circle><circle cx="47" cy="73" r="6" fill="#FFEB3B"></circle><circle cx="60" cy="73" r="6" fill="#FF9800"></circle><circle cx="73" cy="73" r="6" fill="#F44336"></circle><path d="M30 32L23 25L22 50L30 32Z" fill="#FFD700"></path><path d="M90 32L97 25L98 50L90 32Z" fill="#FFD700"></path><path d="M60 23L67 17V30L60 23Z" fill="#FFD700"></path><path d="M60 97L67 103V90L60 97Z" fill="#FFD700"></path><path d="M21 62L17 55H30L21 62Z" fill="#FFD700"></path><path d="M99 62L103 55H90L99 62Z" fill="#FFD700"></path></svg></div><div dir="auto" class="css-146c3p1 r-37tt59 r-a4n0a9 r-zz5t5d r-vw2c0b r-17z84rq">Slot Machines</div></div><div class="css-175oi2r r-1awozwy r-13w96dm r-1icu4ot r-y47klf r-d045u9 r-18u37iz r-vuvdlw r-3o4zer"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-a4n0a9 r-ubezar r-vw2c0b r-wizibn">1000</div></div></div><div class="css-175oi2r r-d0pm55 r-1x0uki6"><div class="css-175oi2r r-1awozwy r-18u37iz r-15d164r r-ubg91z"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-135wba7 r-a4n0a9 r-evnaw r-vw2c0b r-uhung1 r-ohme6j">Slot Machines</div></div><div class="css-175oi2r r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-agouwx r-2eszeu"><div class="css-175oi2r r-18u37iz r-1mi0q7o r-1ubuhtd"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(183,28,28,1.00), rgba(74,4,4,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:78.2457239646284%;top:82.82044598158676%;background-color:rgba(255,215,0,1.00);transform:rotate(191.15355657140984deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:29.380181466255504%;top:44.7975810873678%;background-color:rgba(255,255,255,1.00);transform:rotate(149.7852902634753deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:82.59439399770199%;top:41.223257822649195%;background-color:rgba(255,85,85,1.00);transform:rotate(269.819034789147deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:34.79301048022121%;top:20.733669505005263%;background-color:rgba(255,215,0,1.00);transform:rotate(259.17700051054584deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.60663982818751%;top:66.14406921260652%;background-color:rgba(255,255,255,1.00);transform:rotate(177.15503984603964deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:88.21172908243443%;top:16.358924653088458%;background-color:rgba(255,85,85,1.00);transform:rotate(144.57083134567137deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:29.250729644755875%;top:44.89312369321638%;background-color:rgba(255,215,0,1.00);transform:rotate(344.60693778915027deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:65.44922038301144%;top:87.99706212868185%;background-color:rgba(255,255,255,1.00);transform:rotate(329.2837558926758deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:74.9509035203257%;top:33.589538876421386%;background-color:rgba(255,85,85,1.00);transform:rotate(290.12537781227286deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:43.940543297130255%;top:14.893109108615707%;background-color:rgba(255,215,0,1.00);transform:rotate(86.86994236939623deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:79.89663056171992%;top:47.949892100530924%;background-color:rgba(255,255,255,1.00);transform:rotate(119.59965502085657deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:64.8373080426711%;top:46.50627667655891%;background-color:rgba(255,85,85,1.00);transform:rotate(303.0096266304497deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Classic Slots</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(74,20,140,1.00), rgba(18,0,74,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:43.92073449260663%;top:68.72193336890312%;background-color:rgba(255,215,0,1.00);transform:rotate(94.15513162136233deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.000446460460225%;top:43.68067480633174%;background-color:rgba(255,255,255,1.00);transform:rotate(272.0842362577523deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:54.41761153268324%;top:47.45759220864883%;background-color:rgba(255,85,85,1.00);transform:rotate(6.993097760547506deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:75.79183227104144%;top:22.320804041372817%;background-color:rgba(255,215,0,1.00);transform:rotate(58.53210330585707deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:43.203796323328945%;top:87.18712132434335%;background-color:rgba(255,255,255,1.00);transform:rotate(349.89166375767974deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:18.441754177201215%;top:59.4535874407622%;background-color:rgba(255,85,85,1.00);transform:rotate(40.111796407835065deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:73.4267070961006%;top:58.45486929630635%;background-color:rgba(255,215,0,1.00);transform:rotate(201.89836415966928deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:87.54341053773177%;top:78.7904040353651%;background-color:rgba(255,255,255,1.00);transform:rotate(287.6103075735121deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:84.33320989730936%;top:83.43907156395355%;background-color:rgba(255,85,85,1.00);transform:rotate(90.94702470992536deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:28.643718362667396%;top:66.88398171273532%;background-color:rgba(255,215,0,1.00);transform:rotate(80.13675391554284deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:36.40891889011993%;top:83.62771540497873%;background-color:rgba(255,255,255,1.00);transform:rotate(110.53696389506744deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:75.41176275589496%;top:51.685877840308706%;background-color:rgba(255,85,85,1.00);transform:rotate(329.31483117672667deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Super Slots 5000</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(249,168,37,1.00), rgba(126,74,0,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:68.02083815948292%;top:50.705955690535006%;background-color:rgba(255,215,0,1.00);transform:rotate(151.59087094083054deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:39.39453809032937%;top:51.97183324301381%;background-color:rgba(255,255,255,1.00);transform:rotate(134.32831180622068deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:84.41695421597214%;top:43.475388091859614%;background-color:rgba(255,85,85,1.00);transform:rotate(12.63318531197747deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:86.87647424256309%;top:18.972042885053888%;background-color:rgba(255,215,0,1.00);transform:rotate(104.06574559090883deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:38.962898630880915%;top:63.066403842683144%;background-color:rgba(255,255,255,1.00);transform:rotate(244.04936373670444deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:46.66420404209539%;top:64.42662682189778%;background-color:rgba(255,85,85,1.00);transform:rotate(117.06763167855365deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:25.49870299368136%;top:81.41092800141385%;background-color:rgba(255,215,0,1.00);transform:rotate(258.76418035293534deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:71.25960918240737%;top:33.43404021003135%;background-color:rgba(255,255,255,1.00);transform:rotate(287.5971047260089deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:17.59133928292547%;top:45.2040542823514%;background-color:rgba(255,85,85,1.00);transform:rotate(36.500849609824606deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:19.17930081668027%;top:37.45966268552307%;background-color:rgba(255,215,0,1.00);transform:rotate(163.01815042021607deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:49.867108897492685%;top:42.198251912981384%;background-color:rgba(255,255,255,1.00);transform:rotate(165.98751491247248deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:34.56149457387832%;top:11.680862826937215%;background-color:rgba(255,85,85,1.00);transform:rotate(254.94413830901146deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Egyptian Treasures</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(0,96,100,1.00), rgba(0,47,52,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:45.46481852758019%;top:86.91981502157097%;background-color:rgba(255,215,0,1.00);transform:rotate(58.95408221229286deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:86.7922035774555%;top:79.48244102415919%;background-color:rgba(255,255,255,1.00);transform:rotate(294.79837551987913deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:34.86126499096082%;top:61.31245829620882%;background-color:rgba(255,85,85,1.00);transform:rotate(49.735098181464245deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:62.167140301573966%;top:80.23369211901803%;background-color:rgba(255,215,0,1.00);transform:rotate(123.94951854068057deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:31.14419919237511%;top:73.10622999409345%;background-color:rgba(255,255,255,1.00);transform:rotate(49.787106275830084deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:21.372011264965156%;top:19.49642276042109%;background-color:rgba(255,85,85,1.00);transform:rotate(130.7771903089063deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:86.42235480498742%;top:52.03044109242113%;background-color:rgba(255,215,0,1.00);transform:rotate(241.29799672475502deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:80.93046959773838%;top:29.70169508470251%;background-color:rgba(255,255,255,1.00);transform:rotate(308.77010929169893deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:16.25484409185871%;top:80.55367642429728%;background-color:rgba(255,85,85,1.00);transform:rotate(85.76381718865049deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:60.00739564175184%;top:83.83995475991688%;background-color:rgba(255,215,0,1.00);transform:rotate(186.8729260204697deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:58.95429566705553%;top:64.77757182171618%;background-color:rgba(255,255,255,1.00);transform:rotate(232.9864849219217deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:38.35303605983866%;top:79.31793342432928%;background-color:rgba(255,85,85,1.00);transform:rotate(70.9500378019454deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">CyberHack 2000</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(69,39,160,1.00), rgba(26,0,86,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:48.46047955447594%;top:28.504261460661855%;background-color:rgba(255,215,0,1.00);transform:rotate(151.63884422707653deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:75.19960881212674%;top:63.93372624651928%;background-color:rgba(255,255,255,1.00);transform:rotate(215.2395441949623deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:78.40774474639079%;top:57.76786667119744%;background-color:rgba(255,85,85,1.00);transform:rotate(114.45964660698648deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:42.45988541756901%;top:43.75223497777513%;background-color:rgba(255,215,0,1.00);transform:rotate(249.80462816378483deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:58.227713404643104%;top:77.16352451998424%;background-color:rgba(255,255,255,1.00);transform:rotate(274.2991116164717deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:41.857551935138844%;top:86.65944411189015%;background-color:rgba(255,85,85,1.00);transform:rotate(358.2262843497997deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:61.64898569530855%;top:35.3756717883779%;background-color:rgba(255,215,0,1.00);transform:rotate(302.0306454649461deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:19.118696259471708%;top:67.5960011651889%;background-color:rgba(255,255,255,1.00);transform:rotate(260.0201703938322deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:64.82374846091487%;top:60.43393816505606%;background-color:rgba(255,85,85,1.00);transform:rotate(257.9088045048501deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:58.924031650419764%;top:38.96350351260443%;background-color:rgba(255,215,0,1.00);transform:rotate(169.19064275812298deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:61.37773992819744%;top:10.733946501534302%;background-color:rgba(255,255,255,1.00);transform:rotate(269.50772237651336deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.23153754588627%;top:15.87398334392967%;background-color:rgba(255,85,85,1.00);transform:rotate(38.48959650041901deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Phantom Pirate&#x27;s Fortune</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(46,125,50,1.00), rgba(10,58,15,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:33.189928666699245%;top:26.398920009701126%;background-color:rgba(255,215,0,1.00);transform:rotate(172.29691108829647deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:50.963752788071716%;top:60.85636478583625%;background-color:rgba(255,255,255,1.00);transform:rotate(220.99379839404205deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:28.495588477917497%;top:87.89276478007466%;background-color:rgba(255,85,85,1.00);transform:rotate(253.9758595564802deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:88.41139522171942%;top:24.53781489126314%;background-color:rgba(255,215,0,1.00);transform:rotate(249.42395476151094deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.66949658086873%;top:21.106298004812896%;background-color:rgba(255,255,255,1.00);transform:rotate(90.28659698401657deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:80.76209551859685%;top:84.55177593348871%;background-color:rgba(255,85,85,1.00);transform:rotate(68.58079011138412deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:40.89255081712663%;top:71.68937293698674%;background-color:rgba(255,215,0,1.00);transform:rotate(120.71356545733497deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:28.924996117098%;top:82.044168108078%;background-color:rgba(255,255,255,1.00);transform:rotate(291.41458867569946deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:61.01818602342108%;top:73.46644071628496%;background-color:rgba(255,85,85,1.00);transform:rotate(62.23335453729619deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:57.72164821208696%;top:75.28564826104507%;background-color:rgba(255,215,0,1.00);transform:rotate(333.1542481937556deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:36.469339456135344%;top:57.420999403745995%;background-color:rgba(255,255,255,1.00);transform:rotate(81.84780007655252deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:77.58227787207461%;top:79.52262148378759%;background-color:rgba(255,85,85,1.00);transform:rotate(347.9396270977682deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Lucky Charm Slots</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(2,119,189,1.00), rgba(1,58,94,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.83384811834199%;top:54.33064362965945%;background-color:rgba(255,215,0,1.00);transform:rotate(250.51654645857386deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:16.076661815833972%;top:38.557348035588035%;background-color:rgba(255,255,255,1.00);transform:rotate(217.79253202133606deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:27.358760468476504%;top:45.011652609462836%;background-color:rgba(255,85,85,1.00);transform:rotate(75.92309963399164deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:62.84233975874965%;top:11.731506341482323%;background-color:rgba(255,215,0,1.00);transform:rotate(253.3482926818053deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:66.00826273140568%;top:89.78638620121068%;background-color:rgba(255,255,255,1.00);transform:rotate(226.24647291114545deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:11.299165323653941%;top:61.36413576423196%;background-color:rgba(255,85,85,1.00);transform:rotate(169.08069898540293deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:73.86644423920741%;top:21.725583743330326%;background-color:rgba(255,215,0,1.00);transform:rotate(356.9948563766701deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:14.604433435438686%;top:76.5198913115435%;background-color:rgba(255,255,255,1.00);transform:rotate(298.1196801066126deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:13.233938719375757%;top:13.908340583437244%;background-color:rgba(255,85,85,1.00);transform:rotate(88.22812323280067deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:63.446527467419145%;top:25.23353237732408%;background-color:rgba(255,215,0,1.00);transform:rotate(303.3740314121822deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:16.10307650685259%;top:43.07507209179118%;background-color:rgba(255,255,255,1.00);transform:rotate(333.4186473783967deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:72.6524381599624%;top:38.24171540246299%;background-color:rgba(255,85,85,1.00);transform:rotate(116.37979403003268deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Atlantis Rising</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(63,81,181,1.00), rgba(26,35,126,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:13.69018567068629%;top:39.17683617456363%;background-color:rgba(255,215,0,1.00);transform:rotate(101.2980274003515deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:20.09166915406631%;top:74.67937136924161%;background-color:rgba(255,255,255,1.00);transform:rotate(331.4314707747906deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:50.143000078843784%;top:69.1669353307038%;background-color:rgba(255,85,85,1.00);transform:rotate(44.24838641806981deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:41.58530977327214%;top:44.4983966649538%;background-color:rgba(255,215,0,1.00);transform:rotate(160.49739964355365deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:45.02319739544886%;top:16.99023322854316%;background-color:rgba(255,255,255,1.00);transform:rotate(36.170146458607746deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:80.05295693140566%;top:76.10444225768191%;background-color:rgba(255,85,85,1.00);transform:rotate(112.34840092298357deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:17.5321437591262%;top:61.61706875350086%;background-color:rgba(255,215,0,1.00);transform:rotate(159.85479923741985deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:15.049855882627785%;top:53.9246552081528%;background-color:rgba(255,255,255,1.00);transform:rotate(211.05066955639407deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.219745035734654%;top:14.429455245728935%;background-color:rgba(255,85,85,1.00);transform:rotate(346.75767314300305deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:27.35713776948229%;top:10.916478780726653%;background-color:rgba(255,215,0,1.00);transform:rotate(276.07749691073866deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:40.988584964817534%;top:69.204379098946%;background-color:rgba(255,255,255,1.00);transform:rotate(60.84421451963921deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:61.78395463230268%;top:31.41964713046791%;background-color:rgba(255,85,85,1.00);transform:rotate(206.41896284498566deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Special Education Slots</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1icu4ot r-1ylenci r-d045u9 r-1adt9p7 r-9zvdko r-8dgmk1 r-1udh08x r-1h2t8mc" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(155,89,182,1.00), rgba(142,68,173,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:50.184691802816616%;top:46.25204467673343%;background-color:rgba(255,215,0,1.00);transform:rotate(137.15926762874227deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:72.29502509590395%;top:13.421999668079554%;background-color:rgba(255,255,255,1.00);transform:rotate(131.16244838348942deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:61.427039621487616%;top:69.56741598576544%;background-color:rgba(255,85,85,1.00);transform:rotate(173.3420439770505deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:43.46316988742835%;top:76.61910792705619%;background-color:rgba(255,215,0,1.00);transform:rotate(245.58507720673805deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:18.41184978954999%;top:50.41987617008468%;background-color:rgba(255,255,255,1.00);transform:rotate(182.08538981140475deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:73.49812310625451%;top:33.28665736338774%;background-color:rgba(255,85,85,1.00);transform:rotate(343.92457258371707deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:11.3957580919784%;top:31.3135882028328%;background-color:rgba(255,215,0,1.00);transform:rotate(190.72672380158826deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:60.88404064081247%;top:23.265038096308075%;background-color:rgba(255,255,255,1.00);transform:rotate(318.12086462205025deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.563325301383244%;top:71.8762371926786%;background-color:rgba(255,85,85,1.00);transform:rotate(236.0110901633138deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:76.37268743262389%;top:48.30404315647081%;background-color:rgba(255,215,0,1.00);transform:rotate(296.39634783938953deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:36.06782895475874%;top:14.911075163533276%;background-color:rgba(255,255,255,1.00);transform:rotate(157.28474518618495deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:15.307583234425515%;top:50.53990358855964%;background-color:rgba(255,85,85,1.00);transform:rotate(356.59816182216935deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-1wtj0ep r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.75))"><div class="css-175oi2r r-1awozwy r-18u37iz"><div class="css-175oi2r r-1kihuf0 r-drfeu3 r-1icu4ot r-y47klf r-rs99b7 r-9mo606 r-edyy15"><div dir="auto" class="css-146c3p1"></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-13awgt0 r-1i10wst r-vw2c0b r-1b683b">Hood Rich Slots</div></div><div class="css-175oi2r r-1awozwy r-156q2ks"><div class="css-175oi2r r-12vwi6i r-183ao7s r-1h84pjw r-d045u9 r-ytbthy r-1kti4dy"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-ubezar r-vw2c0b">SPIN</div></div></div></div></div></div></div></div></div><div class="css-175oi2r r-4d76ec r-1x0uki6"><div class="css-175oi2r r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-agouwx r-mfh4gg r-1h2t8mc r-2eszeu"><div class="css-175oi2r r-18u37iz"><div class="css-175oi2r r-cpa5s6"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1ylenci r-1vscm7w r-132bva r-bhtmuz r-1udh08x r-rw9vyn" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(74,20,140,1.00), rgba(18,0,74,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:75.32259632462473%;top:27.11620428970365%;background-color:rgba(255,215,0,1.00);transform:rotate(124.6839558080716deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:42.217893953100244%;top:38.430084187284805%;background-color:rgba(255,255,255,1.00);transform:rotate(56.624783329798035deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.33512403704371%;top:69.71421253230673%;background-color:rgba(255,85,85,1.00);transform:rotate(163.90251336240863deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:37.98170633884199%;top:82.62088557298199%;background-color:rgba(255,215,0,1.00);transform:rotate(224.6892148189454deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.926411448265455%;top:16.196623825410068%;background-color:rgba(255,255,255,1.00);transform:rotate(267.485085018698deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:53.623773100937804%;top:78.05465625263483%;background-color:rgba(255,85,85,1.00);transform:rotate(245.81402721261182deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:30.533725870526425%;top:19.304847223516983%;background-color:rgba(255,215,0,1.00);transform:rotate(69.79603224242642deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:48.105643599892375%;top:50.95890802337852%;background-color:rgba(255,255,255,1.00);transform:rotate(304.2637454089002deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.09839415242787%;top:67.10533097334329%;background-color:rgba(255,85,85,1.00);transform:rotate(155.44290748272994deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:42.91577046298586%;top:59.96313662222016%;background-color:rgba(255,215,0,1.00);transform:rotate(306.2703402992324deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:82.03748347909199%;top:72.56689993564203%;background-color:rgba(255,255,255,1.00);transform:rotate(241.25335065922485deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:21.666538973379144%;top:58.59214863348414%;background-color:rgba(255,85,85,1.00);transform:rotate(147.68332273997487deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1pcd2l5 r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.85))"><div class="css-175oi2r r-1awozwy"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-37tt59 r-jwli3a r-1x35g6 r-vw2c0b r-156q2ks r-q4m81j r-1b683b">Super Slots 5000</div><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a r-bplmwz r-sgbo92 r-q4m81j r-1wnfvn">Advanced 5-reel slots with multiple paylines</div><div class="css-175oi2r r-1erltb3 r-y47klf r-1g94qm0 r-11f147o r-u9wvl5"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-cqee49 r-vw2c0b">PLAY NOW</div></div></div></div></div></div></div><div class="css-175oi2r r-cpa5s6"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1ylenci r-1vscm7w r-132bva r-bhtmuz r-1udh08x r-rw9vyn" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(249,168,37,1.00), rgba(126,74,0,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:32.67723779821029%;top:62.53207719179674%;background-color:rgba(255,215,0,1.00);transform:rotate(314.1846620830779deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:83.88333898457279%;top:19.50886895576028%;background-color:rgba(255,255,255,1.00);transform:rotate(266.3417377065276deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:41.741426236895265%;top:34.8321208175266%;background-color:rgba(255,85,85,1.00);transform:rotate(165.03762419330917deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.47163509252918%;top:16.235567855065067%;background-color:rgba(255,215,0,1.00);transform:rotate(309.80082130876724deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:69.97217596755654%;top:75.0803251525649%;background-color:rgba(255,255,255,1.00);transform:rotate(178.69726461436818deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:13.46496240312133%;top:81.72563141229959%;background-color:rgba(255,85,85,1.00);transform:rotate(292.0748432384232deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:11.358806432407427%;top:85.47025898164156%;background-color:rgba(255,215,0,1.00);transform:rotate(180.61289376518477deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:60.218971422577795%;top:65.20849766066826%;background-color:rgba(255,255,255,1.00);transform:rotate(50.89305798440791deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:26.405750546525883%;top:71.23698069627075%;background-color:rgba(255,85,85,1.00);transform:rotate(72.048630312518deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:78.94562886698742%;top:54.16281114537293%;background-color:rgba(255,215,0,1.00);transform:rotate(46.22027387023753deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:52.81108042029281%;top:77.79259148273381%;background-color:rgba(255,255,255,1.00);transform:rotate(275.90521911542834deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:77.34025760111649%;top:78.56364042170567%;background-color:rgba(255,85,85,1.00);transform:rotate(195.887411870681deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1pcd2l5 r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.85))"><div class="css-175oi2r r-1awozwy"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-37tt59 r-jwli3a r-1x35g6 r-vw2c0b r-156q2ks r-q4m81j r-1b683b">Egyptian Treasures</div><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a r-bplmwz r-sgbo92 r-q4m81j r-1wnfvn">Ancient Egyptian themed slots with special pharaoh bonuses</div><div class="css-175oi2r r-1erltb3 r-y47klf r-1g94qm0 r-11f147o r-u9wvl5"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-cqee49 r-vw2c0b">PLAY NOW</div></div></div></div></div></div></div><div class="css-175oi2r r-cpa5s6"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1ylenci r-1vscm7w r-132bva r-bhtmuz r-1udh08x r-rw9vyn" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(0,96,100,1.00), rgba(0,47,52,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:50.90010474582813%;top:31.47034932305175%;background-color:rgba(255,215,0,1.00);transform:rotate(183.92397600453444deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:55.326808372783276%;top:56.15911962295904%;background-color:rgba(255,255,255,1.00);transform:rotate(233.72085468804877deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:80.27047952106899%;top:45.51763740457872%;background-color:rgba(255,85,85,1.00);transform:rotate(298.8196822518288deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:57.33535955413137%;top:19.964183453394035%;background-color:rgba(255,215,0,1.00);transform:rotate(110.74174864722404deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:33.748532333943174%;top:48.88244126652124%;background-color:rgba(255,255,255,1.00);transform:rotate(123.93056357790273deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:45.43732960401979%;top:59.976756225004024%;background-color:rgba(255,85,85,1.00);transform:rotate(295.2986489834125deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:60.75353549689904%;top:83.13618278554796%;background-color:rgba(255,215,0,1.00);transform:rotate(279.29771913010876deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:41.5565422338436%;top:48.20951313288621%;background-color:rgba(255,255,255,1.00);transform:rotate(134.65668822616917deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:72.43701824115199%;top:16.83059267091517%;background-color:rgba(255,85,85,1.00);transform:rotate(314.5065616676345deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:82.06646132763939%;top:73.96023711521651%;background-color:rgba(255,215,0,1.00);transform:rotate(136.64130993043224deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:57.100193323403694%;top:62.81756753435598%;background-color:rgba(255,255,255,1.00);transform:rotate(40.789366823666235deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:68.11921171818817%;top:86.27928081631958%;background-color:rgba(255,85,85,1.00);transform:rotate(258.34028626162694deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1pcd2l5 r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.85))"><div class="css-175oi2r r-1awozwy"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-37tt59 r-jwli3a r-1x35g6 r-vw2c0b r-156q2ks r-q4m81j r-1b683b">CyberHack 2000</div><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a r-bplmwz r-sgbo92 r-q4m81j r-1wnfvn">Futuristic cyberpunk slot game with digital symbols</div><div class="css-175oi2r r-1erltb3 r-y47klf r-1g94qm0 r-11f147o r-u9wvl5"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-cqee49 r-vw2c0b">PLAY NOW</div></div></div></div></div></div></div><div class="css-175oi2r r-cpa5s6"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1ylenci r-1vscm7w r-132bva r-bhtmuz r-1udh08x r-rw9vyn" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(63,81,181,1.00), rgba(26,35,126,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:22.221168455598885%;top:74.91692017381679%;background-color:rgba(255,215,0,1.00);transform:rotate(209.36444683707947deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.68577167556448%;top:58.571296388205326%;background-color:rgba(255,255,255,1.00);transform:rotate(350.8287758418326deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:65.20108054210043%;top:58.347624071274836%;background-color:rgba(255,85,85,1.00);transform:rotate(162.1932799259316deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:47.597680750812316%;top:41.347946499935695%;background-color:rgba(255,215,0,1.00);transform:rotate(268.7962090279557deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:89.05655054603486%;top:43.50531730456426%;background-color:rgba(255,255,255,1.00);transform:rotate(237.51107797879408deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:12.798879561984489%;top:54.48659115623725%;background-color:rgba(255,85,85,1.00);transform:rotate(101.60932195164153deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:66.06332262940793%;top:21.76446789925958%;background-color:rgba(255,215,0,1.00);transform:rotate(318.4252648447629deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:64.0763704015628%;top:63.00455000159013%;background-color:rgba(255,255,255,1.00);transform:rotate(265.6555389699907deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:81.29956190894391%;top:25.54201519082886%;background-color:rgba(255,85,85,1.00);transform:rotate(90.99141236663502deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:50.56878987142484%;top:76.57680587585699%;background-color:rgba(255,215,0,1.00);transform:rotate(94.48289795299998deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:75.22431636406026%;top:62.75070411313045%;background-color:rgba(255,255,255,1.00);transform:rotate(277.1305449432822deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:69.296587123612%;top:55.1397314993093%;background-color:rgba(255,85,85,1.00);transform:rotate(359.0928907566898deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1pcd2l5 r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.85))"><div class="css-175oi2r r-1awozwy"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-37tt59 r-jwli3a r-1x35g6 r-vw2c0b r-156q2ks r-q4m81j r-1b683b">Special Education Slots</div><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a r-bplmwz r-sgbo92 r-q4m81j r-1wnfvn">Adaptive difficulty slots with extra chances for struggling players</div><div class="css-175oi2r r-1erltb3 r-y47klf r-1g94qm0 r-11f147o r-u9wvl5"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-cqee49 r-vw2c0b">PLAY NOW</div></div></div></div></div></div></div><div class="css-175oi2r r-cpa5s6"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1ylenci r-1vscm7w r-132bva r-bhtmuz r-1udh08x r-rw9vyn" style="transition-duration:0s"><div class="css-175oi2r r-1ylenci r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(155,89,182,1.00), rgba(142,68,173,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:52.99967671537619%;top:31.175100393752047%;background-color:rgba(255,215,0,1.00);transform:rotate(49.83522509290865deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:27.021077527464996%;top:45.230993245879304%;background-color:rgba(255,255,255,1.00);transform:rotate(241.6908041710061deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:38.45998288849587%;top:86.82897586697926%;background-color:rgba(255,85,85,1.00);transform:rotate(228.87298308934547deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:89.8442998754188%;top:17.51470823966846%;background-color:rgba(255,215,0,1.00);transform:rotate(195.09553355514777deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:43.34578484363581%;top:28.176430245295307%;background-color:rgba(255,255,255,1.00);transform:rotate(295.02833626983175deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:86.12895103095482%;top:64.92923310354242%;background-color:rgba(255,85,85,1.00);transform:rotate(67.21416026538238deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:32.99957072661435%;top:54.63963421210087%;background-color:rgba(255,215,0,1.00);transform:rotate(152.9352094143704deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:51.425603873560334%;top:81.48500489277211%;background-color:rgba(255,255,255,1.00);transform:rotate(178.19558662829945deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:88.75822448898462%;top:74.18342887691837%;background-color:rgba(255,85,85,1.00);transform:rotate(151.5782555948503deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:60.719566527951315%;top:22.90872457585781%;background-color:rgba(255,215,0,1.00);transform:rotate(318.3767392556349deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:36.8856679963811%;top:59.82772987753391%;background-color:rgba(255,255,255,1.00);transform:rotate(317.28104323274425deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:28.34463374201036%;top:66.40796123736868%;background-color:rgba(255,85,85,1.00);transform:rotate(13.694051578578312deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1pcd2l5 r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.85))"><div class="css-175oi2r r-1awozwy"><div dir="auto" class="css-146c3p1"></div><div dir="auto" class="css-146c3p1 r-37tt59 r-jwli3a r-1x35g6 r-vw2c0b r-156q2ks r-q4m81j r-1b683b">Hood Rich Slots</div><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a r-bplmwz r-sgbo92 r-q4m81j r-1wnfvn">Street-themed slots with heat meter for increasing multipliers</div><div class="css-175oi2r r-1erltb3 r-y47klf r-1g94qm0 r-11f147o r-u9wvl5"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-cqee49 r-vw2c0b">PLAY NOW</div></div></div></div></div></div></div></div></div><div class="css-175oi2r r-1awozwy r-18u37iz r-1777fci r-156q2ks"><div class="css-175oi2r r-12vwi6i r-z2wwpe r-3da1kt r-1537yvj" style="width:8px;opacity:0.4"></div><div class="css-175oi2r r-12vwi6i r-z2wwpe r-3da1kt r-1537yvj" style="width:8px;opacity:0.4"></div><div class="css-175oi2r r-12vwi6i r-z2wwpe r-3da1kt r-1537yvj" style="width:8px;opacity:0.4"></div><div class="css-175oi2r r-12vwi6i r-z2wwpe r-3da1kt r-1537yvj" style="width:8px;opacity:0.4"></div><div class="css-175oi2r r-12vwi6i r-z2wwpe r-3da1kt r-1537yvj" style="width:8px;opacity:0.4"></div></div></div><div class="css-175oi2r r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-agouwx r-2eszeu"><div class="css-175oi2r r-18u37iz r-1d7mnkm r-ubg91z"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-v1sgqt r-y47klf r-9mo606 r-11f147o r-u9wvl5" style="transition-duration:0s"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a">Featured</div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-y47klf r-9mo606 r-11f147o r-u9wvl5 r-12vwi6i r-1c0yaa2" style="transition-duration:0s"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-cqee49 r-vw2c0b">Slots</div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-v1sgqt r-y47klf r-9mo606 r-11f147o r-u9wvl5" style="transition-duration:0s"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a">Cards</div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-v1sgqt r-y47klf r-9mo606 r-11f147o r-u9wvl5" style="transition-duration:0s"><div dir="auto" class="css-146c3p1 r-ubezar r-135wba7 r-jwli3a">Table Games</div></div></div></div><div class="css-175oi2r r-156q2ks r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-jwli3a r-adyw6z r-vw2c0b r-ku1wi2 r-7e3cka">Slots</div><div class="css-175oi2r r-13qz1uu"><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(183,28,28,1.00), rgba(74,4,4,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:63.380261358803054%;top:23.801904293817202%;background-color:rgba(255,215,0,1.00);transform:rotate(138.30808180743412deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:29.13897943889598%;top:44.45106690210135%;background-color:rgba(255,255,255,1.00);transform:rotate(296.7231917381698deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:88.99484880127902%;top:89.37811679363334%;background-color:rgba(255,85,85,1.00);transform:rotate(320.5646558705466deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:13.628931880713555%;top:64.38324237000717%;background-color:rgba(255,215,0,1.00);transform:rotate(256.09813540733325deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.16836436729028%;top:84.12783666065023%;background-color:rgba(255,255,255,1.00);transform:rotate(171.19389005059054deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.18004826124648%;top:48.41045918233915%;background-color:rgba(255,85,85,1.00);transform:rotate(94.7910117451677deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:62.7719742570693%;top:62.82895336799754%;background-color:rgba(255,215,0,1.00);transform:rotate(296.73410611906627deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.67780644237146%;top:84.83741217569766%;background-color:rgba(255,255,255,1.00);transform:rotate(114.16318089641827deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:54.673244380395744%;top:81.17095218589726%;background-color:rgba(255,85,85,1.00);transform:rotate(174.2231693147357deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:81.74620143331742%;top:45.66407130368022%;background-color:rgba(255,215,0,1.00);transform:rotate(51.16443310778365deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:54.44985242550054%;top:82.11444186440602%;background-color:rgba(255,255,255,1.00);transform:rotate(223.32196548508207deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:57.74878385496013%;top:48.32506644171186%;background-color:rgba(255,85,85,1.00);transform:rotate(133.15630263824934deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Classic Slots</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Simple 3-reel slot machine with classic symbols</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(74,20,140,1.00), rgba(18,0,74,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:60.54373285482516%;top:68.16081304337405%;background-color:rgba(255,215,0,1.00);transform:rotate(114.11697683344816deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:83.79593875708315%;top:12.836510690401202%;background-color:rgba(255,255,255,1.00);transform:rotate(56.28655535574563deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:64.51814231933861%;top:21.755567935405686%;background-color:rgba(255,85,85,1.00);transform:rotate(245.39651067434deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:31.935146345965215%;top:25.33803796930906%;background-color:rgba(255,215,0,1.00);transform:rotate(146.36446045212318deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:51.38918747922881%;top:27.3987947328272%;background-color:rgba(255,255,255,1.00);transform:rotate(223.29549591631724deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:56.46615258736631%;top:86.76524161808103%;background-color:rgba(255,85,85,1.00);transform:rotate(35.54581274982745deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:38.932654278637585%;top:75.74731438294876%;background-color:rgba(255,215,0,1.00);transform:rotate(156.4130780132549deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:34.4465290352435%;top:12.23487408370561%;background-color:rgba(255,255,255,1.00);transform:rotate(91.64507526783004deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:16.890233159345307%;top:40.3516026596681%;background-color:rgba(255,85,85,1.00);transform:rotate(318.99540077575284deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:68.28815674215943%;top:81.47900331434933%;background-color:rgba(255,215,0,1.00);transform:rotate(30.225332477305777deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:52.67057870718871%;top:25.31610179566762%;background-color:rgba(255,255,255,1.00);transform:rotate(97.16741981222621deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:58.57204375617094%;top:53.067267822064856%;background-color:rgba(255,85,85,1.00);transform:rotate(257.49097739859315deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Super Slots 5000</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Advanced 5-reel slots with multiple paylines</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(249,168,37,1.00), rgba(126,74,0,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:33.52412661720351%;top:32.80996041862576%;background-color:rgba(255,215,0,1.00);transform:rotate(168.36712874558248deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:22.524414931499486%;top:87.72680905060855%;background-color:rgba(255,255,255,1.00);transform:rotate(243.07956874707924deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:33.55277177830519%;top:40.97527044296163%;background-color:rgba(255,85,85,1.00);transform:rotate(180.2290674242963deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:33.034216557072504%;top:86.2696765940067%;background-color:rgba(255,215,0,1.00);transform:rotate(198.58698705477497deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:49.32886142250858%;top:18.26487461562568%;background-color:rgba(255,255,255,1.00);transform:rotate(96.16222027837027deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.14069610743977%;top:67.80589747825792%;background-color:rgba(255,85,85,1.00);transform:rotate(69.8599940962013deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:19.94019115697334%;top:24.924240173346366%;background-color:rgba(255,215,0,1.00);transform:rotate(217.82136444539614deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.78388123404133%;top:47.05951448301661%;background-color:rgba(255,255,255,1.00);transform:rotate(100.58650255459935deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:48.01519664790572%;top:61.70846564094427%;background-color:rgba(255,85,85,1.00);transform:rotate(87.44451513462795deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:51.11032578461355%;top:48.634393439029125%;background-color:rgba(255,215,0,1.00);transform:rotate(287.58182454945614deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:23.763729153799567%;top:85.79046316625818%;background-color:rgba(255,255,255,1.00);transform:rotate(36.942119208981374deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:55.75665930885931%;top:14.012236780303198%;background-color:rgba(255,85,85,1.00);transform:rotate(141.8080034429317deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Egyptian Treasures</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Ancient Egyptian themed slots with special pharaoh bonuses</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(0,96,100,1.00), rgba(0,47,52,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:66.6524015844478%;top:35.74255481345725%;background-color:rgba(255,215,0,1.00);transform:rotate(163.41405950524086deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.76328710267829%;top:22.44368559042128%;background-color:rgba(255,255,255,1.00);transform:rotate(121.24804139786873deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:31.32862290964498%;top:42.91537743712066%;background-color:rgba(255,85,85,1.00);transform:rotate(157.5788510949838deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:70.17659044980591%;top:66.8871691298156%;background-color:rgba(255,215,0,1.00);transform:rotate(161.1229140382765deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:23.347815803220744%;top:55.79943468617246%;background-color:rgba(255,255,255,1.00);transform:rotate(331.91048705392063deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:46.47800483543001%;top:56.12531703506509%;background-color:rgba(255,85,85,1.00);transform:rotate(105.1816325855737deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:83.76365860359988%;top:44.005754369043174%;background-color:rgba(255,215,0,1.00);transform:rotate(122.3561458032245deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:78.05091746392463%;top:37.13934749739822%;background-color:rgba(255,255,255,1.00);transform:rotate(148.45404198165372deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:32.063927420447946%;top:80.55729682606466%;background-color:rgba(255,85,85,1.00);transform:rotate(237.8758931559406deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:18.922856613469%;top:21.77825510887672%;background-color:rgba(255,215,0,1.00);transform:rotate(266.57022793365076deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:19.726233747920254%;top:24.410548677745005%;background-color:rgba(255,255,255,1.00);transform:rotate(220.95577264272146deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:28.724894855684475%;top:89.08820494572383%;background-color:rgba(255,85,85,1.00);transform:rotate(59.085885673729585deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">CyberHack 2000</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Futuristic cyberpunk slot game with digital symbols</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(69,39,160,1.00), rgba(26,0,86,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:40.814988223505395%;top:81.31599115815887%;background-color:rgba(255,215,0,1.00);transform:rotate(168.15656414596518deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:36.38246326841168%;top:15.766593871610368%;background-color:rgba(255,255,255,1.00);transform:rotate(240.50689857272374deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:46.51117137176737%;top:31.695486111509865%;background-color:rgba(255,85,85,1.00);transform:rotate(167.79763456969312deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:18.594457274137373%;top:38.66589752623943%;background-color:rgba(255,215,0,1.00);transform:rotate(73.17591707762449deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:77.77606693333736%;top:62.255576098805996%;background-color:rgba(255,255,255,1.00);transform:rotate(308.8419331357332deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:34.77145388457407%;top:28.24289972819999%;background-color:rgba(255,85,85,1.00);transform:rotate(304.4817786416635deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:15.339164284526206%;top:67.24209303912887%;background-color:rgba(255,215,0,1.00);transform:rotate(114.96286734506263deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:85.87019041708933%;top:48.77561446689455%;background-color:rgba(255,255,255,1.00);transform:rotate(139.19900560986235deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:72.77064167736548%;top:33.955410962482006%;background-color:rgba(255,85,85,1.00);transform:rotate(341.95248697602085deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:71.56866530067086%;top:52.13967028878548%;background-color:rgba(255,215,0,1.00);transform:rotate(77.12884957305567deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:72.46247738151135%;top:48.75724364948251%;background-color:rgba(255,255,255,1.00);transform:rotate(72.83431428826967deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:51.39720721960341%;top:26.944251118021878%;background-color:rgba(255,85,85,1.00);transform:rotate(318.17583471688346deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Phantom Pirate&#x27;s Fortune</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Spooky pirate adventure with ghost ship bonus rounds</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(46,125,50,1.00), rgba(10,58,15,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:20.17538029545806%;top:21.248310849107312%;background-color:rgba(255,215,0,1.00);transform:rotate(262.27762955327313deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:76.14940922029217%;top:70.46432168511959%;background-color:rgba(255,255,255,1.00);transform:rotate(217.8135588598592deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:16.172554784043083%;top:54.81844925440981%;background-color:rgba(255,85,85,1.00);transform:rotate(63.25239753081577deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:85.1084835747986%;top:42.818228812938486%;background-color:rgba(255,215,0,1.00);transform:rotate(99.64813641289048deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:65.18950101977228%;top:33.92803888171157%;background-color:rgba(255,255,255,1.00);transform:rotate(219.17421650848527deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:80.27185647114737%;top:58.39443094465244%;background-color:rgba(255,85,85,1.00);transform:rotate(138.18024565052454deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:64.69275800896357%;top:17.198399093208323%;background-color:rgba(255,215,0,1.00);transform:rotate(261.46439583926275deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:53.24468748710537%;top:26.865625621923996%;background-color:rgba(255,255,255,1.00);transform:rotate(155.5532662806522deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:76.97837401898772%;top:52.95726007781839%;background-color:rgba(255,85,85,1.00);transform:rotate(313.18045404372356deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:31.637726537864275%;top:23.828036476445273%;background-color:rgba(255,215,0,1.00);transform:rotate(287.1175852162437deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:13.768491004094443%;top:40.42469626183774%;background-color:rgba(255,255,255,1.00);transform:rotate(342.50344078371074deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:79.20600234079285%;top:81.12655451079232%;background-color:rgba(255,85,85,1.00);transform:rotate(303.76475867560134deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Lucky Charm Slots</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Irish-themed slot machine with lucky charms and rainbows</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(2,119,189,1.00), rgba(1,58,94,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:74.66208418645707%;top:55.128274206160995%;background-color:rgba(255,215,0,1.00);transform:rotate(186.56728587044645deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:87.69361422805396%;top:41.6604528350686%;background-color:rgba(255,255,255,1.00);transform:rotate(296.9904602875277deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.231378284064235%;top:25.26455396374404%;background-color:rgba(255,85,85,1.00);transform:rotate(250.90765523188557deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:83.51726926717298%;top:41.637270303970254%;background-color:rgba(255,215,0,1.00);transform:rotate(165.81119940152865deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:77.55785737116435%;top:79.33960378711294%;background-color:rgba(255,255,255,1.00);transform:rotate(304.1328420088777deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:22.187568048065014%;top:44.43114822384782%;background-color:rgba(255,85,85,1.00);transform:rotate(123.16811599958052deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:37.169184062376544%;top:11.31855984666247%;background-color:rgba(255,215,0,1.00);transform:rotate(229.19604513416823deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:35.203332543199664%;top:28.550718166158404%;background-color:rgba(255,255,255,1.00);transform:rotate(5.01836619863016deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:74.46080172601499%;top:78.14055531678706%;background-color:rgba(255,85,85,1.00);transform:rotate(253.79733863674946deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.02240703490611%;top:64.23777122672837%;background-color:rgba(255,215,0,1.00);transform:rotate(341.7080110523742deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:37.0322421916905%;top:73.10575893362817%;background-color:rgba(255,255,255,1.00);transform:rotate(211.0095993692533deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:61.91406083000766%;top:60.428142723645735%;background-color:rgba(255,85,85,1.00);transform:rotate(330.69675593977587deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Atlantis Rising</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Underwater adventure in the lost city of Atlantis</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(63,81,181,1.00), rgba(26,35,126,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:24.54912561832094%;top:68.42451569887726%;background-color:rgba(255,215,0,1.00);transform:rotate(124.63833905132203deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.32878969451771%;top:48.92357565313462%;background-color:rgba(255,255,255,1.00);transform:rotate(95.22303927634601deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:87.6538064803766%;top:85.72142874902937%;background-color:rgba(255,85,85,1.00);transform:rotate(76.94190086249314deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:59.52229836969204%;top:80.84763804338087%;background-color:rgba(255,215,0,1.00);transform:rotate(254.62359474622906deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:10.537246097607245%;top:40.84802471541181%;background-color:rgba(255,255,255,1.00);transform:rotate(229.52807310832947deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:74.48340474952764%;top:40.9215265352924%;background-color:rgba(255,85,85,1.00);transform:rotate(143.1090168073071deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:63.461624836359825%;top:12.989299568472461%;background-color:rgba(255,215,0,1.00);transform:rotate(81.38472777355037deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:22.01702200737982%;top:21.327345206614545%;background-color:rgba(255,255,255,1.00);transform:rotate(183.66215958019322deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:52.67115764924958%;top:75.46353203901603%;background-color:rgba(255,85,85,1.00);transform:rotate(86.73806442224223deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:81.27445253571354%;top:57.44491869244179%;background-color:rgba(255,215,0,1.00);transform:rotate(162.99239160794727deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:71.81604511962794%;top:36.12050912311625%;background-color:rgba(255,255,255,1.00);transform:rotate(140.97055207097975deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:20.849724601002766%;top:44.09241838822641%;background-color:rgba(255,85,85,1.00);transform:rotate(354.51132926128236deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Special Education Slots</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Adaptive difficulty slots with extra chances for struggling players</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div><div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1dzdj1l r-j7ns9g r-7r4507 r-ku1wi2 r-1udh08x r-13qz1uu" style="transition-duration:0s"><div class="css-175oi2r r-1dzdj1l r-13awgt0 r-1udh08x"><div class="css-175oi2r r-13awgt0 r-bnwqim" style="background-image:linear-gradient(135deg, rgba(155,89,182,1.00), rgba(142,68,173,1.00))"><div class="css-175oi2r r-1pi2tsx r-u8s1d r-13qz1uu"><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:62.99659939814545%;top:39.10999330353883%;background-color:rgba(255,215,0,1.00);transform:rotate(195.05051817982044deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:64.04507143028692%;top:60.056424380208014%;background-color:rgba(255,255,255,1.00);transform:rotate(8.569466490557405deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:42.59446913304578%;top:22.728722353647406%;background-color:rgba(255,85,85,1.00);transform:rotate(288.13664877213915deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:82.30275165303028%;top:34.38840291246844%;background-color:rgba(255,215,0,1.00);transform:rotate(158.5520632801717deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:31.542925624320777%;top:64.79140859176725%;background-color:rgba(255,255,255,1.00);transform:rotate(280.06249698866714deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:18.81974653513426%;top:61.826949073911095%;background-color:rgba(255,85,85,1.00);transform:rotate(98.00697264860807deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:83.57518237455633%;top:74.18267621243129%;background-color:rgba(255,215,0,1.00);transform:rotate(70.86679801638688deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:19.25210843295112%;top:12.048904055533427%;background-color:rgba(255,255,255,1.00);transform:rotate(220.5769098980129deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:74.67195826228986%;top:62.37338130060239%;background-color:rgba(255,85,85,1.00);transform:rotate(345.0490710723531deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:53.0220781053532%;top:61.593864929802976%;background-color:rgba(255,215,0,1.00);transform:rotate(335.7189169962781deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:88.09505173079783%;top:43.426089199798255%;background-color:rgba(255,255,255,1.00);transform:rotate(301.8134567518707deg)"></div><div class="css-175oi2r r-z2wwpe r-z80fyv r-u8s1d r-19wmn03" style="left:34.923457639637014%;top:37.36545379502233%;background-color:rgba(255,85,85,1.00);transform:rotate(94.01607600800686deg)"></div></div></div><div class="css-175oi2r r-1p0dtai r-17s6mgv r-1d2f490 r-1oqcu8e r-u8s1d r-zchlnj r-ipm5af" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.80))"><div class="css-175oi2r r-17s6mgv"><div dir="auto" class="css-146c3p1 r-jwli3a r-1i10wst r-vw2c0b r-d0pm55 r-1wnfvn">Hood Rich Slots</div><div dir="auto" class="css-146c3p1 r-135wba7 r-am3kiz r-1enofrn r-15d164r r-1wnfvn">Street-themed slots with heat meter for increasing multipliers</div><div class="css-175oi2r r-k200y r-1erltb3 r-1ylenci r-rehuqn r-ubg91z"><div dir="auto" class="css-146c3p1 r-135wba7 r-cqee49 r-1enofrn r-vw2c0b">PLAY NOW</div></div></div></div></div></div></div></div><div dir="auto" class="css-146c3p1 r-135wba7 r-5zqcb5 r-1enofrn r-1x0uki6 r-qq1thf r-q4m81j">This app is for educational purposes only. No real money involved.</div></div></div></div></div></div><!--/$--></div></div></div></div><div class="css-175oi2r r-1p0dtai r-zchlnj r-1d2f490 r-105ug2t" style="border-top-width:1px;background-color:rgba(255,255,255,1.00);border-top-color:rgba(216,216,216,1.00);border-right-color:rgba(216,216,216,1.00);border-bottom-color:rgba(216,216,216,1.00);border-left-color:rgba(216,216,216,1.00);height:49px;padding-bottom:0px;padding-top:0px;padding-right:0px;padding-left:0px;transform:translateY(0px)"><div class="css-175oi2r r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-633pao"></div><div role="tablist" class="css-175oi2r r-13awgt0 r-18u37iz"><div class="css-175oi2r r-13awgt0" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;overflow-x:visible;overflow-y:visible"><a href="/" role="tab" tabindex="0" class="css-175oi2r r-1otgn73 r-1awozwy r-eqz5dr r-1h0z5md r-1uu6nss" style="cursor:pointer;flex:1;background-color:rgba(0,0,0,0.00);border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;opacity:1"><div class="css-175oi2r r-h0d30l r-726pan"><div class="css-175oi2r r-1awozwy r-1kihuf0 r-1pi2tsx r-1777fci r-u8s1d r-13qz1uu" style="opacity:1;min-width:25px"><div dir="auto" class="css-146c3p1"></div></div><div class="css-175oi2r r-1awozwy r-1kihuf0 r-1pi2tsx r-1777fci r-u8s1d r-13qz1uu" style="opacity:0"><div dir="auto" class="css-146c3p1"></div></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-1niwhzg r-q4m81j r-10x49cs" style="color:rgba(10,126,164,1.00);font-family:system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;font-weight:500">Slots</div></a></div><div class="css-175oi2r r-13awgt0" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;overflow-x:visible;overflow-y:visible"><a href="/table-games" role="tab" tabindex="0" class="css-175oi2r r-1otgn73 r-1awozwy r-eqz5dr r-1h0z5md r-1uu6nss" style="cursor:pointer;flex:1;background-color:rgba(0,0,0,0.00);border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;opacity:1"><div class="css-175oi2r r-h0d30l r-726pan"><div class="css-175oi2r r-1awozwy r-1kihuf0 r-1pi2tsx r-1777fci r-u8s1d r-13qz1uu" style="opacity:0;min-width:25px"><div dir="auto" class="css-146c3p1"></div></div><div class="css-175oi2r r-1awozwy r-1kihuf0 r-1pi2tsx r-1777fci r-u8s1d r-13qz1uu" style="opacity:1"><div dir="auto" class="css-146c3p1"></div></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-1niwhzg r-q4m81j r-10x49cs" style="color:rgba(142,142,143,1.00);font-family:system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;font-weight:500">Table Games</div></a></div><div class="css-175oi2r r-13awgt0" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;overflow-x:visible;overflow-y:visible"><a href="/explore" role="tab" tabindex="0" class="css-175oi2r r-1otgn73 r-1awozwy r-eqz5dr r-1h0z5md r-1uu6nss" style="cursor:pointer;flex:1;background-color:rgba(0,0,0,0.00);border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;opacity:1"><div class="css-175oi2r r-h0d30l r-726pan"><div class="css-175oi2r r-1awozwy r-1kihuf0 r-1pi2tsx r-1777fci r-u8s1d r-13qz1uu" style="opacity:0;min-width:25px"><div dir="auto" class="css-146c3p1"></div></div><div class="css-175oi2r r-1awozwy r-1kihuf0 r-1pi2tsx r-1777fci r-u8s1d r-13qz1uu" style="opacity:1"><div dir="auto" class="css-146c3p1"></div></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-1niwhzg r-q4m81j r-10x49cs" style="color:rgba(142,142,143,1.00);font-family:system-ui, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;font-weight:500">Profile</div></a></div></div></div></div><!--/$--></div></div></div></div><!--/$--></div></div><script src="/_expo/static/js/web/entry-b41752972d1e46e3b1f814446a05346e.js" defer></script>
+</body></html>
